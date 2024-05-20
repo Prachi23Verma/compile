@@ -1,0 +1,2592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Doodle+Shadow&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/learn-java.css">
+    <title>Java</title>
+</head>
+
+<body>
+
+    <div class="main_container">
+
+        <div class="hero_section">
+            <video autoplay loop muted plays-inline class="background-clip">
+                <source src="video/Untitled design1.mp4" type="video/mp4">
+            </video>
+
+
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                viewBox="0 -960 960 960" width="24">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
+                    <li><a href="front.php">Home</a></li>
+                    <li><a href="#">User</a></li>
+                    <li><a href="Learn.php">Learn</a></li>
+                    <li><a href="index.php">Start Coding</a></li>
+                    <li><a href="signin.php" id="user">Login</a></li>
+                </ul>
+
+                <ul>
+                    <li> <a href="#"><img src="image/CodePilot-logo.png" alt="" class="logo"></a></li>
+                    <li class="hideOnMobile"><a href="front.php">Home</a></li>
+                    <li class="hideOnMobile"><a href="#">User</a></li>
+                    <li class="hideOnMobile"><a href="Learn.php">Learn</a></li>
+                    <li class="hideOnMobile"><a href="index.php">Start Coding</a></li>
+                    <li class="hideOnMobile" id="user"><a href="signin.php">Login</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="24" viewBox="0 -960 960 960" width="24">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
+                </ul>
+            </nav>
+            <div class="Astro">
+                <img src="image/astronaut.png" width="300px" class="img">
+                <h1 class="Main-heading" style="color: aliceblue;">C/CPP<span>Pilot</span></h1>
+                <h2 class="Heading">Welcome <span class="auto-type"></span></h2>
+                <p class="para"> <span style="color: orangered;">CodePilot </span> : Where Curiosity Meets Code and
+                    Creativity Knows No Bounds.</p>
+                <div style="height: 9rem;"></div>
+
+
+            </div>
+
+
+            <div class="second">
+                <section class="section">
+                    <h1 class="Heading head">Module 1</h1>
+                    <details>
+                        <summary>Introduction to C/CPP Language</summary>
+                        <p>C++ is a powerful and widely used programming language that was developed as an extension of the C programming language. <br> It was created by Bjarne Stroustrup in 1979 at Bell Labs and has since become one of the most popular programming languages, particularly for system/application software, game development, embedded systems, and high-performance computing.</p>
+                    </details>
+                    <details>
+                        <summary>Keywords & Identifires</summary>
+                        <p>In C++, keywords and identifiers play important roles in defining the syntax and semantics of the language. Let's break down what they are: <br> <br>
+
+                            1. Keywords:<br>
+                               Keywords are reserved words in C++ that have predefined meanings and cannot be used as identifiers (such as variable names, function names, etc.). These words are part of the language syntax and are used to define control structures, data types, modifiers, and other language elements.<br><br>
+                            
+                               Common C++ keywords include:<br>
+                            
+                               - `int`, `float`, `double`, `char`: Define fundamental data types.<br>
+                               - `if`, `else`, `switch`, `case`, `default`: Control flow statements.<br>
+                               - `for`, `while`, `do`: Looping constructs.<br>
+                               - `class`, `struct`, `enum`: Define user-defined types.<br>
+                               - `public`, `private`, `protected`: Access specifiers in classes.<br>
+                               - `return`, `break`, `continue`: Control statements.<br>
+                               - `new`, `delete`: Dynamic memory allocation and deallocation.<br>
+                               - `virtual`, `override`, `final`: Keywords related to polymorphism and inheritance.<br>
+                               - `const`, `static`, `volatile`: Modifiers for variables and functions.<br>
+                               - `namespace`, `using`: Namespaces and using declarations.<br><br>
+                            
+                            2. Identifiers:<br>
+                               Identifiers are names given to entities such as variables, functions, classes, etc., created by the programmer. These names are used to refer to the entities within the program. Identifiers must follow certain rules:<br><br>
+                            
+                               - Can consist of letters (both uppercase and lowercase), digits, and underscores.<br>
+                               - Must begin with a letter (uppercase or lowercase) or an underscore.<br>
+                               - Cannot contain spaces or special characters (except underscores).<br>
+                               - Case-sensitive (e.g., `MyVar` and `myVar` are treated as different identifiers).<br>
+                            
+                               Examples of identifiers in C++:<br>
+                            
+                               - Variable names: `int count;`, `float totalPrice;`<br>
+                               - Function names: `void calculateArea();`, `int add(int a, int b);`<br>
+                               - Class names: `class MyClass { /* class members */ };`<br>
+                               - Object names: `MyClass obj;`<br><br>
+                            
+                            It's essential to choose meaningful and descriptive identifiers to improve code readability and maintainability. Avoid using keywords as identifiers, as it can lead to compilation errors and confusion. Additionally, adhering to naming conventions (such as camelCase or snake_case) can enhance code consistency and collaboration in larger projects.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Variablles</summary>
+                        <p>Variables in C++ are named storage locations in the computer's memory that hold data, and their values can be changed during the program's execution. They are used to store different types of data, such as numbers, characters, or user-defined types. Here are some key points about variables in C++: <br><br>
+
+                            1. Declaration: Before using a variable in C++, you need to declare it. The declaration specifies the variable's name and its data type. For example:<br><br>
+                               ```cpp<br>
+                               int age;  // Declaration of an integer variable named 'age'<br>
+                               float salary;  // Declaration of a floating-point variable named 'salary'<br>
+                               char grade;  // Declaration of a character variable named 'grade'<br>
+                               ```<br><br>
+                            
+                            2. Initialization: Variables can be initialized with an initial value at the time of declaration. For example:<br>
+                               ```cpp<br>
+                               int count = 0;  // Initialization of 'count' variable with value 0 <br>
+                               float pi = 3.14;  // Initialization of 'pi' variable with value 3.14<br>
+                               char letter = 'A';  // Initialization of 'letter' variable with value 'A'<br>
+                               ```<br><br>
+                            
+                            3. Data Types: C++ supports various data types for variables, including:<br>
+                               - Fundamental data types: `int`, `float`, `double`, `char`, `bool`, etc.<br>
+                               - Derived data types: `arrays`, `pointers`, `references`, `enums`, etc.<br>
+                               - User-defined data types: `structures`, `classes`, `unions`, etc.<br><br>
+                            
+                            4. Scope: Variables in C++ have a scope, which defines where they can be accessed within the program. The scope of a variable is typically limited to the block in which it is declared. For example:<br><br>
+                               ```cpp<br>
+                               int main() {<br>
+                                   int x = 10;  // Variable 'x' is declared and initialized within the main function<br>
+                                   // 'x' can be accessed only within the main function<br>
+                                   return 0;<br>
+                               }<br>
+                               ```<br><br>
+                            
+                            5. Lifetime: The lifetime of a variable is the duration during which it exists in memory. Variables have different lifetimes depending on their scope and storage duration. Local variables have a limited lifetime, while global variables persist throughout the program's execution.<br><br>
+                            
+                            6. Naming Convention: It's important to follow naming conventions when naming variables in C++. Common conventions include using meaningful names that reflect the variable's purpose, starting with a lowercase letter for variables, and using camelCase or snake_case for multi-word variable names.<br><br>
+                            
+                            7. Modifiers: C++ provides modifiers like `const`, `static`, `volatile`, and `mutable` that can be used to modify the behavior of variables. For example:<br><br>
+                               ```cpp<br>
+                               const int MAX_SIZE = 100;  // Constant variable declaration<br>
+                               static int count = 0;  // Static variable declaration<br>
+                               volatile int sensorValue;  // Volatile variable declaration<br>
+                               ```<br><br>
+                            
+                            Understanding variables is fundamental in C++ programming as they are used extensively to store and manipulate data in programs. Proper use of variables contributes to writing efficient, readable, and maintainable code.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Data Type</summary>
+                        <p>In C++, data types specify the type of data that variables can store. C++ supports various data types, which can be categorized into fundamental, derived, and user-defined data types. Here's an overview of the different data types in C++:<br><br>
+
+                            1. Fundamental Data Types:<br>
+                               These are the basic building blocks for defining variables. They represent simple values like integers, floating-point numbers, characters, and boolean values.<br><br>
+                            
+                               - Integer Types:<br>
+                                 - `int`: Integer data type typically representing a 32-bit signed integer.<br>
+                                 - `short`: Short integer data type, usually smaller than `int`.<br>
+                                 - `long`: Long integer data type, usually larger than `int`.<br>
+                                 - `long long`: Long long integer data type, typically larger than `long`.<br>
+                                 - `unsigned int`, `unsigned short`, `unsigned long`, `unsigned long long`: Unsigned integer types without a sign bit.<br><br>
+                            
+                               - Floating-Point Types:<br>
+                                 - `float`: Single-precision floating-point type.<br>
+                                 - `double`: Double-precision floating-point type, typically larger and more precise than `float`.<br>
+                                 - `long double`: Extended-precision floating-point type, usually larger than `double`.<br><br>
+                            
+                               - Character Types:<br>
+                                 - `char`: Character data type representing a single byte.<br>
+                                 - `wchar_t`: Wide character data type representing a wide character (can hold larger character sets).<br>
+                                 - `char16_t`, `char32_t`: Unicode character types for handling Unicode characters.<br><br>
+                            
+                               - Boolean Type:<br>
+                                 - `bool`: Boolean data type representing true or false values.<br><br>
+                            
+                            2. Derived Data Types:<br>
+                               Derived data types are built from fundamental data types and include pointers, arrays, references, and function types.<br><br>
+                            
+                               - Pointers: Variables that store memory addresses of other variables.<br>
+                               - Arrays: Ordered collections of elements of the same data type.<br>
+                               - References: Aliases for other variables.<br>
+                               - Function Types: Data types representing functions.<br><br>
+                            
+                            3. User-Defined Data Types:<br>
+                               These are data types defined by the programmer and include structures, classes, enums, and unions.<br><br>
+                            
+                               - Structures (`struct`): Aggregate data types that can hold multiple variables of different data types under a single name.<br>
+                               - Classes: Similar to structures but with additional features like data hiding and inheritance.<br>
+                               - Enums (Enumerated Types): User-defined data types consisting of a set of named integer constants.<br>                               - Unions: Data structures that store different data types in the same memory location.<br><br>
+                            
+                            Understanding the different data types in C++ is crucial for writing efficient and reliable code. Choosing the appropriate data type for variables based on the nature of the data they will store helps optimize memory usage and ensure proper data manipulation.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Operators</summary>
+                        <p>Operators in C++ are symbols or keywords that perform operations on operands. C++ supports a wide range of operators, which can be categorized into several types based on their functionality. Here's an overview of the different types of operators in C++:<br><br>
+
+                            1. Arithmetic Operators:<br>
+                               Arithmetic operators perform mathematical operations on operands.<br>
+                               - Addition (`+`)<br>
+                               - Subtraction (`-`)<br>
+                               - Multiplication (`*`)<br>
+                               - Division (`/`)<br>
+                               - Modulus (remainder) (`%`)<br><br>
+                            
+                            2. Relational Operators:<br>
+                               Relational operators compare the values of operands and return a boolean result (`true` or `false`).<br>
+                               - Equal to (`==`)<br>
+                               - Not equal to (`!=`)<br>
+                               - Greater than (`>`)<br>
+                               - Less than (`<`)<br>
+                               - Greater than or equal to (`>=`)<br>
+                               - Less than or equal to (`<=`)<br><br>
+                            
+                            3. Logical Operators:<br>
+                               Logical operators perform logical operations on boolean operands and return a boolean result.<br>
+                               - Logical AND (`&&`)<br>
+                               - Logical OR (`||`)<br>
+                               - Logical NOT (`!`)<br><br>
+                            
+                            4. Assignment Operators:<br>
+                               Assignment operators are used to assign values to variables.<br>
+                               - Assignment (`=`)<br>
+                               - Addition assignment (`+=`)<br>
+                               - Subtraction assignment (`-=`)<br>
+                               - Multiplication assignment (`*=`)<br>
+                               - Division assignment (`/=`)<br>
+                               - Modulus assignment (`%=`)<br>
+                               - Increment (`++`)<br>
+                               - Decrement (`--`)<br><br>
+                            
+                            5. Bitwise Operators:<br>
+                               Bitwise operators perform operations at the bit level.<br>
+                               - Bitwise AND (`&`)<br>
+                               - Bitwise OR (`|`)<br>
+                               - Bitwise XOR (`^`)<br>
+                               - Bitwise NOT (`~`)<br>
+                               - Left shift (`<<`)<br>
+                               - Right shift (`>>`)<br><br>
+                            
+                            6. Unary Operators:<br>
+                               Unary operators operate on a single operand.<br>
+                               - Unary plus (`+`)<br>
+                               - Unary minus (`-`)<br>
+                               - Increment (`++`)<br>
+                               - Decrement (`--`)<br>
+                               - Logical NOT (`!`)<br>
+                               - Bitwise NOT (`~`)<br>
+                               - Address-of (`&`)<br>
+                               - Dereference (`*`)<br><br>
+                            
+                            7. Conditional Operator (Ternary Operator):<br>
+                               The conditional operator is a ternary operator that evaluates a boolean expression and returns one of two values depending on whether the expression is true or false.<br>
+                               - Conditional (`?:`)<br><br>
+                            
+                            8. Member Access Operators:<br>
+                               Member access operators are used to access members of objects or structures.<br>
+                               - Dot operator (`.`)<br>
+                               - Arrow operator (`->`)<br><br>
+                            
+                            9. Sizeof Operator:<br>
+                               The sizeof operator returns the size of a data type or variable in bytes.<br>
+                               - Sizeof (`sizeof`)<br><br>
+                            
+                            These are the main categories of operators in C++. Understanding and mastering these operators is essential for writing effective and efficient C++ code. Additionally, operator precedence and associativity determine the order in which operators are evaluated, and understanding these rules is crucial for writing correct expressions.</p>
+                        
+                    </details>
+                    <h1 class="Heading head">Module 2</h1>
+                    <details>
+                        <summary>If-else loop</summary>
+                        <p>In C++, the `if-else` statement is used for conditional execution of code based on the evaluation of a boolean expression. It allows you to specify alternative blocks of code to be executed depending on whether the condition evaluates to true or false. Here's the syntax of the `if-else` statement in C++:<br><br>
+
+                            ```cpp<br>
+                            if (condition) {<br>
+                                // Code block to be executed if the condition is true<br>
+                            } else {<br>
+                                // Code block to be executed if the condition is false<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            The `if` statement evaluates the condition inside the parentheses. If the condition is true, the code block following the `if` statement is executed. If the condition is false, the code block following the `else` statement is executed (if present).
+                            <br>
+                            Example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            int main() {<br>
+                                int x = 10;<br>
+                            
+                                // Check if x is greater than 5<br>
+                                if (x > 5) {<br>
+                                    std::cout << "x is greater than 5" << std::endl;<br>
+                                } else {<br>
+                                    std::cout << "x is not greater than 5" << std::endl;<br>
+                                }<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            x is greater than 5<br>
+                            ```<br><br>
+                            
+                            You can also use nested `if-else` statements to handle multiple conditions. Here's an example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            int main() {<br>
+                                int x = 10;<br>
+                            
+                                // Check if x is positive, negative, or zero<br>
+                                if (x > 0) {<br>
+                                    std::cout << "x is positive" << std::endl;<br>
+                                } else if (x < 0) {<br>
+                                    std::cout << "x is negative" << std::endl;<br>
+                                } else {<br>
+                                    std::cout << "x is zero" << std::endl;<br>
+                                }<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            x is positive<br>
+                            ```<br><br>
+                            
+                            In this example, the `else if` statement is used to check for additional conditions if the previous condition (`x > 0`) is false.<br>
+                            <br>
+                            The `if-else` statement in C++ provides a way to control the flow of execution based on conditions, allowing you to write more flexible and dynamic programs.</p>
+                       
+                    </details>
+                    <details>
+                        <summary>While loop</summary>
+                        <p>In C++, the `while` loop is a control flow statement that repeatedly executes a block of code as long as a specified condition is true. It is used when the number of iterations is not known beforehand and depends on the evaluation of a condition. Here's the syntax of the `while` loop in C++:<br><br>
+
+                            ```cpp<br>
+                            while (condition) {<br>
+                                // Code block to be executed as long as the condition is true<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            The `condition` is a boolean expression that is evaluated before each iteration of the loop. If the condition evaluates to true, the code block inside the `while` loop is executed. After each execution of the code block, the condition is evaluated again. If the condition becomes false, the loop terminates, and the program continues with the statement following the `while` loop.<br>
+                            
+                            Example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            int main() {<br>
+                                int count = 0;<br>
+                            
+                                // Print numbers from 1 to 5 using while loop<br>
+                                while (count < 5) {<br>
+                                    std::cout << count + 1 << std::endl;<br>
+                                    count++; // Increment count by 1<br>
+                                }<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            1<br>
+                            2<br>
+                            3<br>
+                            4<br>
+                            5<br>
+                            ```<br><br>
+                            
+                            In this example, the `while` loop executes as long as the condition `count < 5` is true. Inside the loop, the value of `count` is incremented by 1 in each iteration using the `count++` statement. When `count` becomes 5, the condition becomes false, and the loop terminates.<br>
+                            
+                            It's important to ensure that the condition in a `while` loop eventually becomes false to prevent infinite loops, which can lead to program crashes or freezing. You should also take care to initialize any variables used in the condition before entering the loop.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>For loop</summary>
+                        <p>In C++, the `for` loop is a control flow statement that allows you to iterate over a sequence of values or execute a block of code a fixed number of times. It is particularly useful when the number of iterations is known beforehand. Here's the syntax of the `for` loop in C++:<br><br>
+
+                            ```cpp<br>
+                            for (initialization; condition; update) {<br>
+                                // Code block to be executed in each iteration<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            - The `initialization` part is executed once before the loop begins. It is typically used to initialize loop control variables.<br>
+                            - The `condition` part is evaluated before each iteration. If it evaluates to true, the loop continues; otherwise, the loop terminates.<br>
+                            - The `update` part is executed after each iteration of the loop. It is typically used to update loop control variables.<br>
+                            
+                            Example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            int main() {<br>
+                                // Print numbers from 1 to 5 using for loop<br>
+                                for (int i = 1; i <= 5; i++) {<br>
+                                    std::cout << i << std::endl;<br>
+                                }<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            1<br>
+                            2<br>
+                            3<br>
+                            4<br>
+                            5<br>
+                            ```<br><br>
+                            
+                            In this example:<br>
+                            - `int i = 1` initializes the loop control variable `i` to 1 before the loop begins.<br>
+                            - `i <= 5` is the condition that is evaluated before each iteration. As long as `i` is less than or equal to 5, the loop continues.<br>
+                            - `i++` increments the value of `i` by 1 after each iteration.<br>
+                            
+                            You can also use the `for` loop to iterate over elements of arrays or other containers:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            int main() {<br>
+                                int numbers[] = {1, 2, 3, 4, 5};<br>
+                            
+                                // Print elements of the array<br>
+                                for (int i = 0; i < 5; i++) {<br>
+                                    std::cout << numbers[i] << std::endl;<br>
+                                }<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            1<br>
+                            2<br>
+                            3<br>
+                            4<br>
+                            5<br>
+                            ```<br><br>
+                            
+                            In this example, the `for` loop iterates over the elements of the `numbers` array, printing each element to the console.<br>
+                            
+                            The `for` loop in C++ provides a concise and readable way to iterate over sequences of values or execute a block of code a fixed number of times. It is a versatile construct that is widely used in C++ programming.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Break & continue</summary>
+                        <p>In C++, `break` and `continue` are control flow statements used within loops to alter the flow of execution.<br><br>
+
+                            1. `break` Statement:<br>
+                               - The `break` statement is used to exit the loop prematurely, regardless of the loop's condition.<br>
+                               - When encountered inside a loop (such as `for`, `while`, or `do-while`), the `break` statement immediately terminates the loop, and control passes to the statement following the loop.<br>
+                               - It is commonly used to exit the loop early when a certain condition is met or to terminate a loop if further iterations are unnecessary.<br>
+                              
+                            Example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            int main() {<br>
+                                for (int i = 1; i <= 10; i++) {<br>
+                                    if (i == 5) {<br>
+                                        std::cout << "Reached the break statement. Exiting loop." << std::endl;<br>
+                                        break;  // Exit the loop when i is 5<br>
+                                    }<br>
+                                    std::cout << i << std::endl;<br>
+                                }<br>
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            1<br>
+                            2<br>
+                            3<br>
+                            4<br>
+                            Reached the break statement. Exiting loop.<br>
+                            ```<br><br>
+                            
+                            2. `continue` Statement:<br>
+                               - The `continue` statement is used to skip the remaining code inside the loop for the current iteration and proceed to the next iteration of the loop.<br>
+                               - When encountered inside a loop, the `continue` statement skips any remaining statements within the loop's body and immediately moves to the next iteration of the loop.<br>
+                               - It is commonly used to skip certain iterations based on a condition without terminating the entire loop.<br>
+                            
+                            Example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            int main() {<br>
+                                for (int i = 1; i <= 5; i++) {<br>
+                                    if (i == 3) {<br><br>
+                                        std::cout << "Skipping iteration " << i << std::endl;<br>
+                                        continue;  // Skip iteration when i is 3<br>
+                                    }<br>
+                                    std::cout << i << std::endl;<br>
+                                }<br>
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            1<br>
+                            2<br>
+                            Skipping iteration 3<br>
+                            4<br>
+                            5<br>
+                            ```<br><br>
+                            
+                            In this example, the `continue` statement skips the iteration when `i` is 3, resulting in the number 3 being skipped in the output.<br><br>
+                            
+                            Both `break` and `continue` statements provide control over the flow of loops and can be used to write more efficient and readable code in C++.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Switch case</summary>
+                        <p>In C++, the `switch` statement provides a convenient way to implement multiway branching based on the value of an expression. It allows you to execute different blocks of code based on the value of a variable or an expression. Here's the syntax of the `switch` statement in C++:<br><br>
+
+                            ```cpp<br>
+                            switch (expression) {<br>
+                                case value1:<br>
+                                    // Code block to be executed if expression == value1<br>
+                                    break;<br>
+                                case value2:<br>
+                                    // Code block to be executed if expression == value2<br>
+                                    break;<br>
+                                // More case statements...<br>
+                                default:<br>
+                                    // Code block to be executed if expression doesn't match any case<br>
+                                    break;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            - The `expression` is evaluated once and its value is compared against the values specified in each `case` label.<br>
+                            - If the value of `expression` matches a `case` label, the corresponding code block is executed.<br>
+                            - The `break` statement is used to terminate the `switch` block. If omitted, control will fall through to the next `case` label.<br>
+                            
+                            Example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            int main() {<br>
+                                int choice;<br>
+                                
+                                std::cout << "Enter a number between 1 and 3: ";<br>
+                                std::cin >> choice;<br>
+                                
+                                switch (choice) {<br>
+                                    case 1:<br>
+                                        std::cout << "You chose option 1" << std::endl;<br>
+                                        break;<br>
+                                    case 2:<br>
+                                        std::cout << "You chose option 2" << std::endl;<br>
+                                        break;<br>
+                                    case 3:<br>
+                                        std::cout << "You chose option 3" << std::endl;<br>
+                                        break;<br>
+                                    default:<br>
+                                        std::cout << "Invalid choice" << std::endl;<br>
+                                        break;<br>
+                                }<br>
+                                
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            Enter a number between 1 and 3: 2<br>
+                            You chose option 2<br>
+                            ```<br><br>
+                            
+                            In this example, the user is prompted to enter a number between 1 and 3. Depending on the value entered, the corresponding `case` label is matched, and the corresponding message is displayed. If the entered value doesn't match any `case` label, the `default` block is executed.<br><br>
+                            
+                            The `switch` statement in C++ provides an alternative to using multiple `if-else` statements when you need to compare the value of a variable against multiple values. It can result in cleaner and more concise code, especially when dealing with multiple conditional branches.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Goto</summary>
+                        <p>In C++, the `goto` statement provides a way to transfer control unconditionally to a labeled statement within the same function. However, the use of `goto` is generally discouraged due to its potential to create spaghetti code and make code difficult to understand and maintain. It can lead to complex control flows and make debugging more challenging. That said, there are some scenarios where `goto` might be used, but it should be used judiciously and with caution.<br><br>
+
+                            Here's the syntax of the `goto` statement in C++:<br><br>
+                            
+                            ```cpp<br>
+                            goto label;<br>
+                            ```<br><br>
+                            
+                            - `label` is an identifier followed by a colon (`:`), which marks the target statement where control will be transferred.<br>
+                            
+                            Example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            int main() {<br>
+                                int x = 1;<br>
+                            
+                                // Using goto to jump to a labeled statement<br>
+                                if (x == 1) {<br>
+                                    goto print_message;<br>
+                                }<br>
+                            
+                                std::cout << "This line should not be reached." << std::endl;<br>
+                            
+                            print_message:<br>
+                                std::cout << "Hello, world!" << std::endl;<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            Hello, world!<br>
+                            ```<br><br>
+                            
+                            In this example, if the condition `x == 1` is true, the control flow jumps directly to the `print_message` label using `goto`, and the message "Hello, world!" is printed. The line after the label (`std::cout << "This line should not be reached." << std::endl;`) is skipped.
+                            <br><br>
+                            As mentioned earlier, the use of `goto` can make code difficult to understand and maintain, especially in larger programs. In most cases, structured programming constructs such as loops (`for`, `while`, `do-while`) and conditional statements (`if-else`, `switch`) provide better alternatives to achieve the desired behavior without resorting to `goto`. Therefore, it's generally recommended to avoid using `goto` and instead use structured programming constructs to write clear and maintainable code.</p>
+                       
+                    </details>
+                    <h1 class="Heading head">Module 3</h1>
+                    <details>
+                        <summary>Function</summary>
+                        <p>In C++, a function is a block of code that performs a specific task. Functions allow you to break down a program into smaller, manageable pieces, making the code modular, reusable, and easier to maintain. Here's how you can define and use functions in C++:<br><br>
+
+                            Function Declaration:<br>
+                            To declare a function, you need to specify the function's return type, name, and parameters (if any). The function declaration provides a prototype that describes the function's interface, including its return type and parameters.<br><br>
+                            
+                            ```cpp<br>
+                            return_type function_name(parameter_list);<br>
+                            ```<br><br>
+                            
+                            - `return_type`: Specifies the data type of the value returned by the function. It can be `void` if the function doesn't return a value.<br>
+                            - `function_name`: Name of the function.<br>
+                            - `parameter_list`: List of parameters (inputs) passed to the function. Parameters are optional.<br><br>
+                            
+                            Function Definition:<br>
+                            The function definition contains the actual implementation of the function. It defines what the function does when it's called.<br><br>
+                            
+                            ```cpp<br>
+                            return_type function_name(parameter_list) {<br>
+                                // Function body<br>
+                                // Code to perform the task<br>
+                                return return_value; // Return statement (if return_type is not void)<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            - `return_value`: The value returned by the function. It is optional if the return type is `void`.<br><br>
+                            
+                             Function Call:<br>
+                            To use a function, you call it by its name and pass arguments (if any). The function call executes the code inside the function.<br><br>
+                            
+                            ```cpp<br>
+                            function_name(arguments);<br>
+                            ```<br><br>
+                            
+                            - `arguments`: Values passed to the function as inputs. They must match the parameter types and order defined in the function declaration.<br>
+                            
+                             Example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            // Function declaration<br>
+                            int add(int x, int y);<br>
+                            
+                            int main() {<br>
+                                int result;<br>
+                            
+                                // Function call<br>
+                                result = add(5, 3);<br>
+                            
+                                // Print the result<br>
+                                std::cout << "Result: " << result << std::endl;<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            
+                            // Function definition<br>
+                            int add(int x, int y) {<br>
+                                return x + y;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            Result: 8<br>
+                            ```<br><br>
+                            
+                            In this example, `add()` is a function that takes two integer parameters (`x` and `y`) and returns their sum. The function is declared before `main()` and defined after `main()`. Inside `main()`, the function is called with arguments `5` and `3`, and the result is stored in the variable `result`. Finally, the result is printed to the console.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Recursion</summary>
+                        <p>Recursion is a programming technique where a function calls itself directly or indirectly to solve a problem. In C++, recursion allows you to solve complex problems by breaking them down into smaller, more manageable subproblems. Recursive functions have two main components: a base case and a recursive case. The base case defines the termination condition of the recursion, while the recursive case defines how the function calls itself to solve smaller instances of the problem. Here's how recursion works in C++:<br><br>
+
+                            Base Case:<br>
+                            The base case is the condition under which the recursion stops. It prevents the function from calling itself indefinitely and provides a termination point for the recursive process.<br><br>
+                            
+                             Recursive Case:<br>
+                            The recursive case defines how the function calls itself to solve smaller instances of the problem. Each recursive call typically reduces the problem size or moves closer to the base case.<br><br>
+                            
+                             Example: Factorial Function Using Recursion<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            // Function declaration<br>
+                            unsigned long long factorial(int n);<br>
+                            
+                            int main() {<br>
+                                int n;<br>
+                                std::cout << "Enter a non-negative integer: ";<br>
+                                std::cin >> n;<br>
+                                
+                                // Function call<br>
+                                unsigned long long result = factorial(n);<br>
+                                
+                                // Print the result<br>
+                                std::cout << "Factorial of " << n << " = " << result << std::endl;<br>
+                                
+                                return 0;<br>
+                            }<br>
+                            
+                            // Function definition<br>
+                            unsigned long long factorial(int n) {<br>
+                                // Base case: If n is 0 or 1, return 1<br>
+                                if (n == 0 || n == 1) {<br>
+                                    return 1;<br>
+                                }<br>
+                                // Recursive case: Multiply n by factorial of (n-1)<br>
+                                else {<br>
+                                    return n * factorial(n - 1);<br>
+                                }<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            Enter a non-negative integer: 5<br>
+                            Factorial of 5 = 120<br>
+                            ```<br><br>
+                            
+                            In this example, the `factorial()` function calculates the factorial of a non-negative integer `n`. If `n` is 0 or 1 (base case), the function returns 1. Otherwise, it recursively calls itself with the argument `n-1` (recursive case) until the base case is reached. The final result is the product of `n` and the factorial of `n-1`. Recursion allows us to express the factorial computation concisely, but it's important to ensure that the base case is reached eventually to prevent infinite recursion.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Function overloading</summary>
+                        <p>Function overloading in C++ allows you to define multiple functions with the same name but different parameter lists or different types. This feature enables you to use the same function name for different purposes, making your code more readable and intuitive. Function overloading is based on the number, order, and types of parameters in the function signatures. Here's how function overloading works in C++:
+                            <br><br>
+                             Example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            // Function declaration with one parameter<br>
+                            void print(int num);<br>
+                            
+                            // Function declaration with two parameters<br>
+                            void print(double num1, double num2);<br>
+                            
+                            // Function declaration with different types of parameters<br>
+                            void print(char ch);<br>
+                            
+                            int main() {<br>
+                                // Function calls<br>
+                                print(5);                // Calls print(int)<br>
+                                print(3.14, 2.71);       // Calls print(double, double)<br>
+                                print('A');              // Calls print(char)<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            
+                            // Function definition for print(int num)<br>
+                            void print(int num) {<br>
+                                std::cout << "Integer: " << num << std::endl;<br>
+                            }<br>
+                            
+                            // Function definition for print(double num1, double num2)<br>
+                            void print(double num1, double num2) {<br>
+                                std::cout << "Doubles: " << num1 << " and " << num2 << std::endl;<br>
+                            }<br>
+                            
+                            // Function definition for print(char ch)<br>
+                            void print(char ch) {<br>
+                                std::cout << "Character: " << ch << std::endl;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            Integer: 5<br>
+                            Doubles: 3.14 and 2.71<br>
+                            Character: A<br>
+                            ```<br><br>
+                            
+                            In this example:<br>
+                            
+                            - Three `print()` functions are declared with different parameter lists: `print(int num)`, `print(double num1, double num2)`, and `print(char ch)`.<br>
+                            - Inside `main()`, each `print()` function is called with different arguments.<br>
+                            - Depending on the number and types of arguments passed during the function call, the appropriate `print()` function is selected for execution.<br><br>
+                            
+                            Function overloading is resolved by the compiler based on the best match between the arguments passed during the function call and the function signatures. The compiler selects the function with the closest match in terms of the number and types of arguments. If no exact match is found, the compiler tries to perform implicit conversions to find the best match. It's important to note that function overloading is limited to the same scope, meaning you cannot overload functions across different namespaces or classes.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Default argument</summary>
+                        <p>In C++, you can specify default arguments for function parameters. Default arguments allow you to call a function without providing values for some parameters, in which case the default values are used. This feature provides flexibility and simplifies function calls by reducing the need for overloaded functions. Here's how you can use default arguments in C++:<br><br>
+
+                            Syntax:<br>
+                            
+                            ```cpp<br>
+                            return_type function_name(parameter_type parameter_name = default_value);<br>
+                            ```<br><br>
+                            
+                            - `return_type`: Specifies the data type of the value returned by the function.<br>
+                            - `function_name`: Name of the function.<br>
+                            - `parameter_type`: Data type of the parameter.<br>
+                            - `parameter_name`: Name of the parameter.<br>
+                            - `default_value`: Default value assigned to the parameter if no argument is provided during the function call.<br>
+                            
+                           Example:<br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            // Function declaration with default argument<br>
+                            void greet(std::string name = "Guest");<br>
+                            
+                            int main() {<br>
+                                // Function calls with and without arguments<br>
+                                greet();           // Uses default argument "Guest"<br>
+                                greet("Alice");    // Overrides default argument with "Alice"<br>
+                                
+                                return 0;<br>
+                            }<br>
+                            
+                            // Function definition with default argument<br>
+                            void greet(std::string name) {<br>
+                                std::cout << "Hello, " << name << "!" << std::endl;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            Hello, Guest!<br>
+                            Hello, Alice!<br>
+                            ```<br><br>
+                            
+                            In this example, the `greet()` function is declared with a default argument `"Guest"`. When called without providing any argument, the default value `"Guest"` is used. However, if an argument is provided during the function call, it overrides the default argument.<br><br>
+                            
+                            Note:<br>
+                            - Default arguments should be specified from right to left. Once a default argument is provided for a parameter, all subsequent parameters to its right must also have default arguments.<br>
+                            - Default arguments are specified in the function declaration, and they are not repeated in the function definition.<br>
+                            - Default arguments are resolved at compile time, and the compiler ensures that the appropriate function is called based on the arguments provided during the function call.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Return reference</summary>
+                        <p>In C++, you can return a reference from a function, which allows you to return a reference to a variable or object stored in memory. Returning a reference can be useful when you want to avoid copying large objects or when you want to modify the original variable or object directly. However, it's crucial to ensure that the lifetime of the referenced object exceeds the lifetime of the reference itself to prevent dangling references.<br><br>
+
+                            Here's how you can return a reference from a function in C++:<br>
+                            
+                             Example 1: Returning a Reference to a Variable<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            // Function declaration<br>
+                            int& increment(int& num);<br>
+                            
+                            int main() {<br>
+                                int x = 5;<br>
+                                
+                                // Function call<br>
+                                increment(x) = 10; // Assigns 10 to x<br>
+                                
+                                std::cout << "x: " << x << std::endl; // Output: x: 10<br>
+                                
+                                return 0;<br>
+                            }<br>
+                            
+                            // Function definition<br>
+                            int& increment(int& num) {<br>
+                                // Increment the value of num<br>
+                                num++;<br>
+                                return num; // Return a reference to num<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            In this example, the `increment()` function takes an integer reference `num` as a parameter and increments its value. It then returns a reference to the same integer `num`. In `main()`, we call the `increment()` function and assign `10` to the reference returned by the function. This directly modifies the original variable `x`.
+                            <br><br>
+                             Example 2: Returning a Reference to an Element in an Array<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            // Function declaration<br>
+                            int& get_element(int arr[], int index);<br>
+                            
+                            int main() {<br>
+                                int numbers[] = {1, 2, 3, 4, 5};<br>
+                                
+                                // Function call<br>
+                                get_element(numbers, 2) = 10; // Assigns 10 to numbers[2]<br>
+                                
+                                for (int num : numbers) {<br>
+                                    std::cout << num << " ";<br>
+                                }<br>
+                                std::cout << std::endl; // Output: 1 2 10 4 5
+                                <br>
+                                return 0;<br>
+                            }<br>
+                            
+                            // Function definition<br>
+                            int& get_element(int arr[], int index) {<br>
+                                return arr[index]; // Return a reference to the element at index<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            In this example, the `get_element()` function takes an integer array `arr[]` and an index as parameters and returns a reference to the element at the specified index. In `main()`, we call the `get_element()` function and assign `10` to the reference returned by the function. This directly modifies the element at index `2` in the `numbers` array.<br><br>
+                            
+                            Returning a reference from a function can be powerful, but it requires careful handling to avoid dangling references and unintended consequences. Make sure that the lifetime of the referenced object exceeds the lifetime of the reference itself.</p>
+                        
+                    </details>
+                    <h1 class="Heading head">Module 4</h1>
+                    <details>
+                        <summary>Arrays</summary>
+                        <p>In C++, an array is a collection of elements of the same data type stored in contiguous memory locations. Arrays provide a convenient way to store and manipulate multiple values of the same type under a single name. Here's how you can work with arrays in C++:<br><br>
+
+                             Declaration:<br>
+                            To declare an array in C++, you specify the data type of the elements and the size of the array.<br>
+                            
+                            ```cpp<br>
+                            datatype arrayName[arraySize];<br>
+                            ```<br>
+                            
+                            Example:<br><br>
+                            
+                            ```cpp<br>
+                            int numbers[5]; // Declares an array of integers with size 5<br>
+                            ```<br><br>
+                            
+                             Initialization:<br>
+                            You can initialize an array at the time of declaration or later using assignment statements.<br>
+                            
+                            ```cpp<br>
+                            int numbers[5] = {1, 2, 3, 4, 5}; // Initialization at declaration<br>
+                            ```<br><br>
+                            
+                           Accessing Elements:<br>
+                            You can access individual elements of an array using index notation. Array indices start from 0 and go up to `size - 1`.<br>
+                            
+                            ```cpp<br>
+                            int x = numbers[0]; // Accesses the first element (index 0)<br>
+                            ```<br><br>
+                            
+                             Iterating Through Array:<br>
+                            You can use loops to iterate through the elements of an array.<br><br>
+                            
+                            ```cpp<br>
+                            for (int i = 0; i < 5; i++) {<br>
+                                std::cout << numbers[i] << " ";<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            int main() {<br>
+                                // Declaration and initialization of an array<br>
+                                int numbers[5] = {1, 2, 3, 4, 5};<br>
+                            
+                                // Accessing and printing elements of the array<br>
+                                for (int i = 0; i < 5; i++) {<br>
+                                    std::cout << numbers[i] << " ";<br>
+                                }<br>
+                                std::cout << std::endl;<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            1 2 3 4 5<br>
+                            ```<br><br>
+                            
+                             Note:<br>
+                            - The size of an array must be a constant expression known at compile time.<br>
+                            - Arrays in C++ are zero-indexed, meaning the first element has an index of 0.<br>
+                            - Accessing elements beyond the bounds of an array results in undefined behavior.<br>
+                            - C++ also supports multidimensional arrays, which are arrays of arrays or arrays of multiple dimensions.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Multi-dimensional array</summary>
+                        <p>In C++, a multi-dimensional array is an array of arrays, or an array with multiple dimensions. Multi-dimensional arrays provide a convenient way to represent data in multiple dimensions, such as matrices or tables. You can declare and work with multi-dimensional arrays using nested square brackets `[][]`, where each pair of square brackets represents an additional dimension. Here's how you can work with multi-dimensional arrays in C++:<br><br>
+
+                             Declaration:<br>
+                            To declare a multi-dimensional array in C++, you specify the data type of the elements and the size of each dimension.<br>
+                            
+                            ```cpp<br>
+                            datatype arrayName[size1][size2]...[sizeN];<br>
+                            ```<br>
+                            <br>
+                            Example of a 2D array (matrix):<br>
+                            
+                            ```cpp<br>
+                            int matrix[3][3]; // Declares a 3x3 matrix of integers<br>
+                            ```<br><br>
+                            
+                            Initialization:<br>
+                            You can initialize a multi-dimensional array at the time of declaration or later using nested initialization lists.<br>
+                            
+                            ```cpp<br>
+                            int matrix[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; // Initialization at declaration<br>
+                            ```<br><br>
+                            
+                             Accessing Elements:<br>
+                            You can access individual elements of a multi-dimensional array using multiple indices.<br>
+                            
+                            ```cpp<br>
+                            int x = matrix[0][0]; // Accesses the element at row 0, column 0<br>
+                            ```<br><br>
+                            
+                             Iterating Through Array:<br>
+                            You can use nested loops to iterate through the elements of a multi-dimensional array.<br>
+                            
+                            ```cpp<br>
+                            for (int i = 0; i < rows; i++) {<br>
+                                for (int j = 0; j < cols; j++) {<br>
+                                    std::cout << matrix[i][j] << " ";<br>
+                                }<br>
+                                std::cout << std::endl;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                             Example:<br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            int main() {<br>
+                                // Declaration and initialization of a 2D array (3x3 matrix)<br>
+                                int matrix[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};<br>
+                            
+                                // Accessing and printing elements of the array<br>
+                                for (int i = 0; i < 3; i++) {<br>
+                                    for (int j = 0; j < 3; j++) {<br>
+                                        std::cout << matrix[i][j] << " ";<br>
+                                    }<br>
+                                    std::cout << std::endl;<br>
+                                }<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            1 2 3<br>
+                            4 5 6<br>
+                            7 8 9<br>
+                            ```<br><br>
+                            
+                             Note:<br>
+                            - Multi-dimensional arrays can have any number of dimensions, but they can become complex to manage beyond two or three dimensions.<br>
+                            - The size of each dimension must be a constant expression known at compile time.<br>
+                            - You can use multi-dimensional arrays to represent concepts such as matrices, tables, or grids in your programs.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Pointers</summary>
+                        <p>In C++, a pointer is a variable that stores the memory address of another variable. Pointers provide a powerful mechanism for dynamic memory allocation and manipulation of memory addresses, enabling efficient memory management and advanced programming techniques. Here's how you can work with pointers in C++:<br><br>
+
+                             Declaration:<br>
+                            To declare a pointer variable in C++, you specify the data type followed by an asterisk (`*`) and the name of the pointer variable.<br>
+                            
+                            ```cpp<br>
+                            datatype *pointerName;<br>
+                            ```<br><br>
+                            
+                            Example:<br>
+                            
+                            ```cpp<br>
+                            int *ptr; // Declares a pointer to an integer <br>
+                            ```<br><br>
+                            
+                             Initialization:<br>
+                            You can initialize a pointer with the address of another variable using the address-of operator (`&`).<br>
+                            
+                            ```cpp<br>
+                            int x = 10;<br>
+                            int *ptr = &x; // Initializes ptr with the address of variable x<br>
+                            ```<br><br>
+                            
+                             Dereferencing:<br>
+                            You can access the value stored at the memory address pointed to by a pointer using the dereference operator (`*`).<br>
+                            
+                            ```cpp<br>
+                            int x = 10;<br>
+                            int *ptr = &x; // Initializes ptr with the address of variable x<br>
+                            int value = *ptr; // Dereferences ptr to get the value stored at the address it points to<br>
+                            ```<br><br>
+                            
+                             Pointer Arithmetic:<br>
+                            You can perform arithmetic operations on pointers, such as addition, subtraction, and comparison. Pointer arithmetic is based on the size of the data type pointed to by the pointer.<br>
+                            
+                            ```cpp<br>
+                            int numbers[] = {1, 2, 3, 4, 5};<br>
+                            int *ptr = numbers; // Initializes ptr with the address of the first element of the array<br>
+                            int thirdElement = *(ptr + 2); // Accesses the third element of the array using pointer arithmetic<br>
+                            ```<br><br>
+                            
+                             Dynamic Memory Allocation:<br>
+                            You can dynamically allocate memory using the `new` operator and deallocate memory using the `delete` operator.<br>
+                            
+                            ```cpp<br>
+                            int *ptr = new int; // Dynamically allocates memory for an integer<br>
+                            *ptr = 10; // Assigns a value to the dynamically allocated memory<br>
+                            delete ptr; // Deallocates the dynamically allocated memory<br>
+                            ```<br><br>
+                            
+                             Example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            int main() {<br>
+                                int x = 10;<br>
+                                int *ptr = &x; // Initializes ptr with the address of variable x<br>
+                                
+                                std::cout << "Value of x: " << x << std::endl;<br>
+                                std::cout << "Address of x: " << &x << std::endl;<br>
+                                std::cout << "Value stored at the address pointed to by ptr: " << *ptr << std::endl;<br>
+                                
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            Value of x: 10<br>
+                            Address of x: 0x7ffee2911298<br>
+                            Value stored at the address pointed to by ptr: 10<br>
+                            ```<br><br>
+                            
+                            Pointers are a fundamental concept in C++ and are widely used for various purposes, such as dynamic memory allocation, passing parameters by reference, and implementing data structures like linked lists and trees. Understanding pointers is essential for writing efficient and flexible C++ programs.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Memory allocation</summary>
+                        <p>In C++, memory allocation can be done in two main ways: stack allocation and heap allocation. Both methods have their advantages and use cases, and understanding them is crucial for efficient memory management in C++.<br><br>
+
+                            Stack Allocation:<br>
+                            Stack allocation refers to allocating memory from the stack, which is a region of memory managed by the compiler. Memory allocated on the stack is automatically deallocated when the function scope in which it was allocated ends. Stack allocation is fast and efficient, but the size of memory allocated on the stack is fixed and limited.<br><br>
+                            
+                            Syntax:<br>
+                            ```cpp<br>
+                            datatype variableName;<br>
+                            ```
+                            <br><br>
+                            Example:<br>
+                            ```cpp<br>
+                            int x; // Allocates memory for an integer on the stack<br>
+                            ```<br><br>
+                            
+                             Heap Allocation:<br>
+                            Heap allocation refers to allocating memory from the heap, which is a larger pool of memory managed by the operating system. Memory allocated on the heap remains allocated until it is explicitly deallocated by the programmer. Heap allocation allows dynamic memory allocation, where memory size and lifetime can be determined at runtime. However, heap allocation is slower than stack allocation and can lead to memory leaks and fragmentation if not managed properly.<br><br>
+                            
+                           Syntax:<br>
+                            ```cpp<br>
+                            datatype *pointerName = new datatype;<br>
+                            ```<br><br>
+                            
+                            Example:<br>
+                            ```cpp<br>
+                            int *ptr = new int; // Allocates memory for an integer on the heap<br>
+                            ```<br><br>
+                            
+                             Deallocation:<br>
+                            Memory allocated on the heap must be deallocated using the `delete` operator to prevent memory leaks.<br>
+                            
+                            ```cpp<br>
+                            delete ptr; // Deallocates memory allocated for the integer pointed to by ptr<br>
+                            ```<br>
+                            
+                             Example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            int main() {<br>
+                                // Stack allocation<br>
+                                int x; // Allocates memory for an integer on the stack<br>
+                                x = 5; // Assigns a value to the variable x<br>
+                            
+                                // Heap allocation<br>
+                                int *ptr = new int; // Allocates memory for an integer on the heap<br>
+                                *ptr = 10; // Assigns a value to the integer pointed to by ptr<br>
+                            
+                                std::cout << "Value of x: " << x << std::endl;<br>
+                                std::cout << "Value pointed to by ptr: " << *ptr << std::endl;<br>
+                            
+                                // Deallocate memory allocated on the heap<br>
+                                delete ptr;<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                             Note:<br>
+                            - Stack memory allocation is generally faster and more efficient than heap memory allocation.<br>
+                            - Use stack allocation for short-lived variables with fixed size and heap allocation for dynamically allocated memory with flexible size and lifetime.<br>
+                            - Always remember to deallocate memory allocated on the heap using the `delete` operator to prevent memory leaks.</p>
+                      
+                    </details>
+                    <details>
+                        <summary>String</summary>
+                        <p>In C++, a string is a sequence of characters stored in contiguous memory locations. Unlike C-style strings, which are represented as arrays of characters terminated by a null character (`'\0'`), C++ provides a standard string class called `std::string` in the `<string>` header, which offers a more convenient and versatile way to work with strings. Here's how you can work with strings in C++ using the `std::string` class:<br><br>
+
+                            Declaration and Initialization:<br>
+                            To declare and initialize a string in C++, you can use the `std::string` class.<br><br>
+                            
+                            ```cpp<br>
+                            #include <string><br>
+                            
+                            std::string str1;                    // Declares an empty string<br>
+                            std::string str2 = "Hello, world!";  // Declares and initializes a string<br>
+                            std::string str3("C++ Programming"); // Alternative initialization syntax<br>
+                            ```<br><br>
+                            
+                             Accessing and Modifying Elements:<br>
+                            You can access individual characters of a string using the subscript (`[]`) operator or the `at()` function. You can also modify the contents of a string using these methods.<br><br>
+                            
+                            ```cpp<br>
+                            char ch = str2[0];      // Accesses the first character of str2<br>
+                            char ch2 = str2.at(1);  // Accesses the second character of str2<br>
+                            str3[0] = 'c';          // Modifies the first character of str3<br>
+                            ```
+                            <br><br>
+                            Concatenation:<br>
+                            You can concatenate two strings using the `+` operator or the `append()` function.<br>
+                            
+                            ```cpp<br>
+                            std::string result = str2 + " Welcome!";     // Concatenates two strings<br>
+                            str1.append("Hello");                        // Appends a string to str1<br>
+                            ```<br><br>
+                            
+                             Length and Size:<br>
+                            You can get the length of a string (number of characters) using the `length()` or `size()` member functions.<br>
+                            
+                            ```cpp<br>
+                            int len = str2.length();    // Gets the length of str2<br>
+                            int size = str3.size();     // Gets the size of str3<br>
+                            ```<br><br>
+                            
+                            Comparison:<br>
+                            You can compare two strings using the relational operators (`==`, `!=`, `<`, `<=`, `>`, `>=`) or the `compare()` function.<br><br>
+                            
+                            ```cpp<br>
+                            if (str1 == str2) {<br>
+                                // Strings are equal<br>
+                            }<br>
+                            int result = str2.compare("Hello"); // Compares str2 with "Hello"<br>
+                            ```<br><br>
+                            
+                             Substring:<br>
+                            You can extract a substring from a string using the `substr()` function.<br>
+                            
+                            ```cpp<br>
+                            std::string substr = str3.substr(0, 3); // Extracts the first 3 characters of str3<br>
+                            ```<br><br>
+                            
+                             Example:<br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            #include <string><br>
+                            
+                            int main() {<br>
+                                std::string greeting = "Hello";<br>
+                                std::string name = "Alice";<br>
+                            
+                                std::cout << greeting + ", " + name + "!" << std::endl;<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            Hello, Alice!<br>
+                            ```<br><br>
+                            
+                            The `std::string` class in C++ provides a wide range of member functions and overloaded operators for manipulating strings efficiently. It offers a safer and more convenient alternative to working with C-style strings.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Structure</summary>
+                        <p>In C++, a structure is a user-defined data type that allows you to group together variables of different data types under a single name. Structures provide a way to represent complex data types in a more organized and modular manner. You can define a structure using the `struct` keyword in C++. Here's how you can work with structures:<br><br>
+
+                             Declaration:<br>
+                            To declare a structure in C++, you use the `struct` keyword followed by the name of the structure and a list of member variables.<br>
+                            
+                            ```cpp<br>
+                            struct structName {<br>
+                                datatype member1;<br>
+                                datatype member2;<br>
+                                // Additional members...<br>
+                            };<br>
+                            ```<br><br>
+                            
+                            Example:<br>
+                            
+                            ```cpp<br>
+                            struct Person {<br>
+                                std::string name;<br>
+                                int age;<br>
+                                double height;<br>
+                            };<br>
+                            ```<br><br>
+                            
+                            Initialization:<br>
+                            You can initialize a structure at the time of declaration or later using the dot (`.`) operator.<br>
+                            
+                            ```cpp<br>
+                            Person p1 = {"Alice", 25, 5.8}; // Initialization at declaration<br>
+                            Person p2;                      // Declaration without initialization<br>
+                            p2.name = "Bob";                // Initialization after declaration<br>
+                            p2.age = 30;<br>
+                            p2.height = 6.0;<br>
+                            ```<br><br>
+                            
+                             Accessing Members:<br>
+                            You can access individual members of a structure using the dot (`.`) operator.<br>
+                            
+                            ```cpp<br>
+                            std::cout << "Name: " << p1.name << std::endl;<br>
+                            std::cout << "Age: " << p1.age << std::endl;<br>
+                            std::cout << "Height: " << p1.height << std::endl;<br>
+                            ```
+                            <br><br>
+                             Example:<br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            #include <string><br>
+                            
+                            // Structure definition<br>
+                            struct Person {<br>
+                                std::string name;<br>
+                                int age;<br>
+                                double height;<br>
+                            };<br>
+                            
+                            int main() {<br>
+                                // Structure initialization<br>
+                                Person p1 = {"Alice", 25, 5.8};<br>
+                                
+                                // Accessing structure members<br>
+                                std::cout << "Name: " << p1.name << std::endl;<br>
+                                std::cout << "Age: " << p1.age << std::endl;<br>
+                                std::cout << "Height: " << p1.height << std::endl;<br>
+                                
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            Name: Alice<br>
+                            Age: 25<br>
+                            Height: 5.8<br>
+                            ```<br><br>
+                            
+                             Note:<br>
+                            - Structures in C++ are similar to classes, but with default public access for members.<br>
+                            - You can define member functions (methods) inside a structure, but they are not commonly used.<br>
+                            - Structures are often used to represent records, data packets, or any other type of compound data. They provide a way to organize and manipulate related data elements efficiently.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Unions</summary>
+                        <p>In C++, a union is a user-defined data type that allows you to store different data types in the same memory location. Unlike structures, where each member has its own memory location, all members of a union share the same memory space. This means that only one member of the union can be active at a time. Unions are useful when you need to store different types of data in a memory-efficient way and when you only need to access one member at a time. Here's how you can work with unions in C++:<br><br>
+
+                            Declaration:<br>
+                            To declare a union in C++, you use the `union` keyword followed by the name of the union and a list of member variables.<br>
+                            
+                            ```cpp<br>
+                            union unionName {<br>
+                                datatype member1;<br>
+                                datatype member2;<br>
+                                // Additional members...<br>
+                            };<br>
+                            ```<br><br>
+                            
+                            Example:<br>
+                            
+                            ```cpp<br>
+                            union Data {<br>
+                                int intValue;<br>
+                                double doubleValue;<br>
+                                char charValue;<br>
+                            };<br>
+                            ```<br><br>
+                            
+                             Initialization:<br>
+                            You can initialize a union at the time of declaration or later using the assignment operator.<br>
+                            
+                            ```cpp<br>
+                            Data data = {10}; // Initializes intValue member to 10<br>
+                            ```<br><br>
+                            
+                             Accessing Members:<br>
+                            You can access individual members of a union using the dot (`.`) operator. However, only one member of the union can be active at a time.<br>
+                            
+                            ```cpp<br>
+                            std::cout << "Integer value: " << data.intValue << std::endl;<br>
+                            ```<br><br>
+                            
+                             Example:<br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            // Union definition<br>
+                            union Data {<br>
+                                int intValue;<br>
+                                double doubleValue;<br>
+                                char charValue;<br>
+                            };<br>
+                            
+                            int main() {<br>
+                                // Union initialization<br>
+                                Data data = {10}; // Initializes intValue member to 10
+                                <br>
+                                // Accessing union members<br>
+                                std::cout << "Integer value: " << data.intValue << std::endl;<br>
+                                
+                                // Change the active member<br>
+                                data.doubleValue = 3.14;<br>
+                                std::cout << "Double value: " << data.doubleValue << std::endl;<br>
+                                
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            Integer value: 10<br>
+                            Double value: 3.14<br>
+                            ```<br><br>
+                            
+                            Note:<br>
+                            - The size of a union is equal to the size of its largest member.<br>
+                            - Unions are often used in situations where memory needs to be shared between different types of data, such as in network protocols or device drivers.<br>
+                            - Accessing a non-active member of a union may lead to undefined behavior, so it's essential to keep track of which member is currently active.</p>
+                       
+                    </details>
+                    <details>
+                        <summary>Enumeration</summary>
+                        <p>In C++, an enumeration (enum) is a user-defined data type that consists of a set of named integer constants. Enumerations provide a way to define symbolic names for integral values, making the code more readable and maintainable. Each constant in an enumeration has an associated integer value, which can be implicitly assigned by the compiler or explicitly specified by the programmer. Here's how you can work with enumerations in C++:<br><br>
+
+                             Declaration:<br>
+                            To declare an enumeration in C++, you use the `enum` keyword followed by the name of the enumeration and a list of enumerator names enclosed in braces `{}`.<br><br>
+                            
+                            ```cpp<br>
+                            enum EnumName {<br>
+                                enumerator1,<br>
+                                enumerator2,<br>
+                                // Additional enumerators...<br>
+                            };<br>
+                            ```<br><br>
+                            
+                            Example:<br>
+                            
+                            ```cpp<br>
+                            enum Color {<br>
+                                RED,<br>
+                                GREEN,<br>
+                                BLUE<br>
+                            };<br>
+                            ```<br><br>
+                            
+                             Initialization:<br>
+                            You can initialize variables of the enumeration type using the enumerator names.<br>
+                            
+                            ```cpp<br>
+                            Color color = RED; // Initializes color to RED<br>
+                            ```
+                            <br><br>
+                            Enumerator Values:<br>
+                            By default, the first enumerator has the value 0, and the value of each subsequent enumerator is incremented by 1.<br><br>
+                            
+                            ```cpp<br>
+                            std::cout << "Value of RED: " << RED << std::endl;    // Output: 0<br>
+                            std::cout << "Value of GREEN: " << GREEN << std::endl; // Output: 1<br>
+                            std::cout << "Value of BLUE: " << BLUE << std::endl;   // Output: 2<br>
+                            ```<br><br>
+                            
+                            You can also explicitly specify integer values for enumerators.<br><br>
+                            
+                            ```cpp<br>
+                            enum Weekday {<br>
+                                MONDAY = 1,<br>
+                                TUESDAY = 2,<br>
+                                WEDNESDAY = 3,<br>
+                                THURSDAY = 4,<br>
+                                FRIDAY = 5,<br>
+                                SATURDAY = 6,<br>
+                                SUNDAY = 7<br>
+                            };<br>
+                            ```<br><br>
+                            
+                            Example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            // Enumeration definition<br>
+                            enum Color {<br>
+                                RED,<br>
+                                GREEN,<br>
+                                BLUE<br>
+                            };<br>
+                            
+                            int main() {<br>
+                                // Enumeration variable initialization<br>
+                                Color color = RED;<br>
+                                
+                                // Using enumeration constants<br>
+                                if (color == RED) {<br>
+                                    std::cout << "Color is red" << std::endl;<br>
+                                } else if (color == GREEN) {<br>
+                                    std::cout << "Color is green" << std::endl;<br>
+                                } else if (color == BLUE) {<br>
+                                    std::cout << "Color is blue" << std::endl;<br>
+                                }<br>
+                                
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            Color is red<br>
+                            ```<br><br>
+                            
+                             Note:<br>
+                            - Enumerations are implicitly convertible to and from integers, allowing you to use them in expressions where integral types are expected.<br>
+                            - By default, enumerations are of type `int`, but you can explicitly specify a different underlying type if needed.<br>
+                            - Enumerations are often used to define sets of related constants, such as days of the week, months of the year, or error codes. They provide a more expressive and type-safe alternative to using raw integer constants.</p>
+                        
+                    </details>
+                    <h1 class="Heading head">Module 5</h1>
+                    <details>
+                        <summary>Assignment 1</summary>
+                        <p>1. Write a program to calculate the factorial of a given number using recursion.</p>
+                        <p>2. Implement a class representing a complex number with methods to perform addition, subtraction, multiplication, and division of complex numbers.</p>
+                    </details>
+                    <details>
+                        <summary>Assignment 2</summary>
+                        <p>1. Create a program to manage a library system, allowing users to add books, borrow books, return books, and display available books.</p>
+                        <p>2. Write a C++ program to implement a stack data structure using arrays with methods to push, pop, and display elements.</p>
+                    </details>
+                    <details>
+                        <summary>Assignment 3</summary>
+                        <p>1. Implement a class representing a student with attributes such as name, roll number, and marks. Include methods to input student details, display student details, and calculate the grade based on marks.</p>
+                        <p>2. Develop a program to convert a given infix expression to its equivalent postfix expression using a stack.</p>
+                    </details>
+                    <h1 class="Heading head">Module 6</h1>
+                    <details>
+                        <summary>Object and class</summary>
+                        <p>In C++, classes and objects are fundamental concepts used in object-oriented programming (OOP). Classes serve as blueprints for creating objects, which are instances of those classes. Classes define the properties (data members) and behaviors (member functions) of objects. Here's how you can work with classes and objects in C++:<br><br>
+
+                            Class Declaration:<br>
+                            To declare a class in C++, you use the `class` keyword followed by the name of the class and a list of member variables and member functions enclosed in braces `{}`. By convention, the names of classes are capitalized.<br><br>
+                            
+                            ```cpp<br>
+                            class ClassName {<br>
+                            public: // Access specifier<br>
+                                // Member variables (data members)<br>
+                                datatype member1;<br>
+                                datatype member2;<br>
+                                
+                                // Member functions (methods)<br>
+                                returnType methodName(parameterList);<br>
+                            };<br>
+                            ```<br><br>
+                            
+                            Example:<br>
+                            
+                            ```cpp<br>
+                            class Rectangle {<br>
+                            public:<br>
+                                double length;<br>
+                                double width;<br>
+                                
+                                double area(); // Member function declaration<br>
+                            };<br>
+                            ```<br><br>
+                            
+                            Object Creation:<br>
+                            To create an object of a class, you declare a variable of that class type. The variables created are called objects or instances of the class.<br><br>
+                            
+                            ```cpp<br>
+                            ClassName objectName; // Creates an object of ClassName<br>
+                            ```<br><br>
+                            
+                            Example:<br>
+                            
+                            ```cpp<br>
+                            Rectangle rect; // Creates an object of Rectangle<br>
+                            ```<br><br>
+                            
+                             Accessing Members:<br>
+                            You can access the members of an object using the dot (`.`) operator.<br><br>
+                            
+                            ```cpp<br>
+                            rect.length = 5.0;  // Accesses and modifies the length member of rect<br>
+                            rect.width = 3.0;   // Accesses and modifies the width member of rect<br>
+                            double area = rect.area(); // Calls the area() member function of rect<br>
+                            ```<br><br>
+                            
+                             Member Function Definitions:<br>
+                            Member functions of a class can be defined inside or outside the class declaration.<br><br>
+                            
+                            ```cpp<br>
+                            returnType ClassName::methodName(parameterList) {<br>
+                                // Method implementation<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Example:<br>
+                            
+                            ```cpp<br>
+                            double Rectangle::area() {<br>
+                                return length * width;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            // Class declaration<br>
+                            class Rectangle {<br>
+                            public:<br>
+                                double length;<br>
+                                double width;<br>
+                                
+                                double area(); // Member function declaration<br>
+                            };<br>
+                            
+                            // Member function definition<br>
+                            double Rectangle::area() {<br>
+                                return length * width;<br>
+                            }<br>
+                            
+                            int main() {<br>
+                                // Object creation<br>
+                                Rectangle rect;<br>
+                                
+                                // Accessing members<br>
+                                rect.length = 5.0;<br>
+                                rect.width = 3.0;<br>
+                                
+                                // Calculating area<br>
+                                double area = rect.area();<br>
+                                
+                                // Output<br>
+                                std::cout << "Area of the rectangle: " << area << std::endl;<br>
+                                
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            Area of the rectangle: 15<br>
+                            ```<br><br>
+                            
+                             Note:<br>
+                            - Classes provide a way to model real-world entities with properties and behaviors.<br>
+                            - Objects are instances of classes, and they encapsulate data and behavior.<br>
+                            - Access specifiers (`public`, `private`, `protected`) control the visibility of class members.<br>
+                            - Member functions can access and modify the member variables of an object.<br>
+                            - Constructors and destructors are special member functions used for object initialization and cleanup, respectively.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Constructors</summary>
+                        <p>In C++, a constructor is a special member function of a class that is automatically called when an object of that class is created. Constructors are used to initialize the object's data members and perform any necessary setup tasks. Constructors have the same name as the class and do not have a return type, not even `void`. There are several types of constructors in C++, including default constructors, parameterized constructors, copy constructors, and more. Here's how you can work with constructors in C++:<br><br>
+
+                             Default Constructor:<br>
+                            A default constructor is a constructor that doesn't take any parameters. It is automatically called when an object is created without any arguments. If no constructor is defined for a class, the compiler provides a default constructor, which initializes all data members to their default values (zero-initialized for built-in types and default-initialized for user-defined types).<br><br>
+                            
+                            ```cpp<br>
+                            class ClassName {<br>
+                            public:<br>
+                                // Default constructor<br>
+                                ClassName() {<br>
+                                    // Constructor body<br>
+                                }<br>
+                            };<br>
+                            ```<br><br>
+                            
+                            Parameterized Constructor:<br>
+                            A parameterized constructor is a constructor that takes one or more parameters. It is used to initialize the object's data members with the values passed as arguments during object creation.<br><br>
+                            
+                            ```cpp<br>
+                            class ClassName {<br>
+                            public:<br>
+                                // Parameterized constructor<br>
+                                ClassName(datatype param1, datatype param2) {<br>
+                                    // Initialize data members with parameters<br>
+                                }<br>
+                            };<br>
+                            ```<br><br>
+                            
+                             Copy Constructor:<br>
+                            A copy constructor is a constructor that initializes an object using another object of the same class. It is used to create a copy of an existing object. If a copy constructor is not explicitly defined, the compiler provides a default copy constructor, which performs member-wise copy.<br><br>
+                            
+                            ```cpp <br>
+                            class ClassName {<br>
+                            public:<br>
+                                // Copy constructor<br>
+                                ClassName(const ClassName &other) {<br>
+                                    // Initialize data members with data members of other object<br>
+                                }<br>
+                            };<br>
+                            ```<br><br>
+                            
+                             Example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            // Class declaration<br>
+                            class Rectangle {<br>
+                            private:<br>
+                                double length;<br>
+                                double width;<br>
+                            
+                            public:<br>
+                                // Default constructor<br>
+                                Rectangle() {<br>
+                                    length = 0.0;<br>
+                                    width = 0.0;<br>
+                                }<br>
+                            
+                                // Parameterized constructor<br>
+                                Rectangle(double l, double w) {<br>
+                                    length = l;<br>
+                                    width = w;<br>
+                                }<br>
+                            
+                                // Copy constructor<br>
+                                Rectangle(const Rectangle &other) {<br>
+                                    length = other.length;<br>
+                                    width = other.width;<br>
+                                }<br>
+                            
+                                // Member function to calculate area<br>
+                                double area() {<br>
+                                    return length * width;<br>
+                                }<br>
+                            };<br>
+                            
+                            int main() {<br>
+                                // Object creation using default constructor<br>
+                                Rectangle rect1;<br>
+                                std::cout << "Area of rect1: " << rect1.area() << std::endl;<br>
+                            
+                                // Object creation using parameterized constructor<br>
+                                Rectangle rect2(5.0, 3.0);<br>
+                                std::cout << "Area of rect2: " << rect2.area() << std::endl;<br>
+                            
+                                // Object creation using copy constructor<br>
+                                Rectangle rect3(rect2);<br>
+                                std::cout << "Area of rect3: " << rect3.area() << std::endl;<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            Area of rect1: 0<br>
+                            Area of rect2: 15<br>
+                            Area of rect3: 15<br>
+                            ```<br><br>
+                            
+                            Note:<br>
+                            - Constructors are called automatically when an object is created and cannot be called explicitly.<br>
+                            - Constructors can be overloaded, meaning a class can have multiple constructors with different parameter lists.<br>
+                            - Initialization lists can be used to initialize data members in the constructor's initialization phase.<br>
+                            - Destructors are special member functions that are called automatically when an object is destroyed. They are used to release resources acquired by the object during its lifetime.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Operator overloading</summary>
+                        <p>Operator overloading in C++ allows you to redefine the behavior of operators for user-defined types, including classes and structures. It enables you to use operators such as `+`, `-`, `*`, `/`, `==`, `!=`, etc., with objects of your own classes or structures. This feature allows you to make your code more intuitive and readable by enabling natural syntax for your custom types. Here's how you can overload operators in C++:<br><br>
+
+                            Syntax:<br>
+                            
+                            ```cpp<br>
+                            return_type operator op(parameters) {<br>
+                                // Operator implementation<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            - `return_type`: Specifies the data type of the result of the operation.<br>
+                            - `op`: Represents the operator to be overloaded (e.g., `+`, `-`, `*`, `/`, `==`, `!=`, etc.).<br>
+                            - `parameters`: Represents the parameters required for the operation (usually one or two operands).<br>
+                            
+                             Example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            
+                            class Complex {<br>
+                            private:<br>
+                                double real;<br>
+                                double imag;<br>
+                            
+                            public:<br>
+                                                            // Constructor<br>
+                                Complex(double r = 0.0, double i = 0.0) : real(r), imag(i) {}<br>
+                            
+                                // Overloading + operator<br>
+                                Complex operator+(const Complex& other) {<br>
+                                    return Complex(real + other.real, imag + other.imag);<br>
+                                }<br>
+                            
+                                // Overloading - operator<br>
+                                Complex operator-(const Complex& other) {<br>
+                                    return Complex(real - other.real, imag - other.imag);<br>
+                                }<br>
+                            
+                                // Overloading * operator<br>
+                                Complex operator*(const Complex& other) {<br>
+                                    return Complex(real * other.real - imag * other.imag,<br>
+                                                   real * other.imag + imag * other.real);<br>
+                                }<br>
+                            
+                                // Overloading += operator<br>
+                                Complex& operator+=(const Complex& other) {<br>
+                                    real += other.real;<br>
+                                    imag += other.imag;<br>
+                                    return *this;<br>
+                                }<br>
+                            
+                                // Overloading -= operator<br>
+                                Complex& operator-=(const Complex& other) {<br>
+                                    real -= other.real;<br>
+                                    imag -= other.imag;<br>
+                                    return *this;<br>
+                                }<br>
+                            
+                                // Overloading << operator for output<br>
+                                friend std::ostream& operator<<(std::ostream& out, const Complex& c) {<br>
+                                    out << c.real << " + " << c.imag << "i";<br>
+                                    return out;<br>
+                                }<br>
+                            };<br>
+                            
+                            int main() {<br>
+                                Complex c1(3, 2);<br>
+                                Complex c2(4, 5);<br>
+                            
+                                Complex sum = c1 + c2;<br>
+                                Complex difference = c1 - c2;<br>
+                                Complex product = c1 * c2;<br>
+                            
+                                std::cout << "Sum: " << sum << std::endl;<br>
+                                std::cout << "Difference: " << difference << std::endl;<br>
+                                std::cout << "Product: " << product << std::endl;<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Output:<br>
+                            ```<br>
+                            Sum: 7 + 7i<br>
+                            Difference: -1 + -3i<br>
+                            Product: 2 + 23i<br>
+                            ```<br><br>
+                            
+                            In this example, the `Complex` class overloads the `+`, `-`, and `*` operators to perform addition, subtraction, and multiplication of complex numbers. Additionally, the `+=` and `-=` operators are overloaded for in-place addition and subtraction. Finally, the `<<` operator is overloaded as a friend function to output `Complex` objects.</p>
+                       
+                    </details>
+                    <details>
+                        <summary>Pointer  </summary>
+                        <p>In C++, a pointer is a variable that stores the memory address of another variable. Pointers are used to store addresses of variables or memory blocks, allowing for dynamic memory allocation and manipulation of memory directly. Here's a basic overview of pointers in C++:<br><br>
+
+                             Declaration and Initialization<br>
+                            ```cpp<br>
+                            int *ptr; // Declaration of a pointer to an integer<br>
+                            int *ptr = nullptr; // Initialize to nullptr (null pointer), recommended in modern C++<br>
+                            int *ptr = &some_variable; // Initialize to the address of some_variable<br>
+                            ```<br><br>
+                            
+                            Dereferencing<br>
+                            Accessing the value that the pointer points to is called dereferencing.<br>
+                            ```cpp<br>
+                            int x = 10;<br>
+                            int *ptr = &x; // ptr now holds the address of x<br>
+                            
+                            // Dereferencing the pointer to get the value it points to<br>
+                            int value = *ptr; // value is now 10<br>
+                            ```<br><br>
+                            
+                            Pointer Arithmetic<br>
+                            ```cpp<br>
+                            int arr[5] = {1, 2, 3, 4, 5};<br>
+                            int *ptr = arr; // Pointer to the first element of the array<br>
+                            
+                            // Incrementing the pointer moves to the next element<br>
+                            ptr++; // Now points to arr[1]<br>
+                            
+                            // Decrementing the pointer moves to the previous element<br>
+                            ptr--; // Now points to arr[0]<br>
+                            
+                            // Adding an integer to a pointer increments it by that many elements<br>
+                            ptr += 2; // Now points to arr[2]<br>
+                            
+                            // Subtracting an integer from a pointer decrements it by that many elements<br>
+                            ptr -= 1; // Now points to arr[1]<br>
+                            ```<br><br>
+                            
+                             Dynamic Memory Allocation<br>
+                            ```cpp<br>
+                            int *ptr = new int; // Allocates memory for an integer on the heap<br>
+                            *ptr = 10; // Assigning a value to the memory location pointed to by ptr<br>
+                            
+                            // To deallocate the memory when it's no longer needed<br>
+                            delete ptr;<br>
+                            ptr = nullptr; // Resetting the pointer to nullptr for safety<br>
+                            ```<br><br>
+                            
+                            Pointers and Arrays<br>
+                            ```cpp<br>
+                            int arr[5] = {1, 2, 3, 4, 5};<br>
+                            int *ptr = arr; // Pointer to the first element of the array<br>
+                            
+                            // Accessing array elements through pointer arithmetic<br>
+                            cout << *ptr << endl; // Outputs: 1<br>
+                            cout << *(ptr + 1) << endl; // Outputs: 2<br>
+                            ```<br><br>
+                            
+                             Pointer to Pointer (Double Pointer)<br>
+                            ```cpp<br>
+                            int x = 10;<br>
+                            int *ptr1 = &x;<br>
+                            int **ptr2 = &ptr1; // Pointer to pointer<br>
+                            
+                            // Accessing the value of x through ptr2<br>
+                            cout << **ptr2 << endl; // Outputs: 10<br>
+                            ```<br><br>
+                            
+                             Null Pointers<br>
+                            ```cpp<br>
+                            int *ptr = nullptr; // Null pointer<br>
+                            if (ptr == nullptr) {<br>
+                                cout << "Pointer is null" << endl;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                             Avoiding Dangling Pointers<br>
+                            Ensure that pointers do not point to deallocated memory.<br>
+                            ```cpp<br>
+                            int *ptr = new int;<br>
+                            // Some operations<br>
+                            delete ptr;<br>
+                            ptr = nullptr; // Always reset the pointer after deallocation<br>
+                            ```<br><br>
+                            
+                            Pointers in C++ give you powerful capabilities but also require careful handling to avoid common pitfalls like memory leaks and dangling pointers.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Memory management</summary>
+                        <p>Memory management in C++ involves allocating and deallocating memory for variables and data structures. C++ provides several mechanisms for memory management, including:<br><br>
+
+                            1. Stack Allocation : Variables declared inside functions or blocks are typically allocated on the stack. Memory for these variables is automatically deallocated when the function or block exits.<br><br>
+                            
+                               ```cpp<br>
+                               void foo() {<br>
+                                   int x = 10; // x is allocated on the stack<br>
+                                   // After the function exits, memory for x is automatically deallocated<br>
+                               }<br>
+                               ```<br><br>
+                            
+                            2. Heap Allocation : Sometimes, you need to allocate memory dynamically at runtime, and this memory remains allocated until explicitly deallocated. This is done using dynamic memory allocation with `new` and `delete` operators.<br><br>
+                            
+                               ```cpp<br>
+                               int *ptr = new int; // Allocates memory for an integer on the heap<br>
+                               *ptr = 10;<br>
+                               // Use *ptr<br>
+                               delete ptr; // Deallocates memory when no longer needed<br>
+                               ```<br><br>
+                            
+                            3. Smart Pointers : To manage dynamic memory more safely and conveniently, C++ provides smart pointers like `std::unique_ptr`, `std::shared_ptr`, and `std::weak_ptr`, which automatically handle memory deallocation.<br><br>
+                            
+                               ```cpp<br>
+                               #include <memory><br>
+                               std::unique_ptr<int> ptr = std::make_unique<int>(10); // Allocates memory on the heap<br>
+                               ```<br><br>
+                            
+                            4. Resource Acquisition Is Initialization (RAII): RAII is a C++ programming idiom where resource acquisition (like memory allocation) is tied to object lifetime. When an object goes out of scope, its destructor is called, ensuring timely resource deallocation.<br><br>
+                            
+                               ```cpp<br>
+                               class MyClass {<br>
+                               public:<br>
+                                   MyClass() : ptr(new int) {}<br>
+                                   ~MyClass() { delete ptr; }<br>
+                               private:<br>
+                                   int* ptr;<br>
+                               };<br>
+                               ```<br><br>
+                            
+                            5. Containers and Algorithms : C++ Standard Library provides containers like `std::vector`, `std::list`, etc., which manage memory automatically for dynamically sized data structures. Algorithms like `std::sort` and `std::transform` operate on these containers efficiently.<br><br>
+                            
+                               ```cpp<br>
+                               #include <vector><br>
+                               std::vector<int> vec = {1, 2, 3, 4, 5}; // Dynamically-sized array<br>
+                               ```<br><br>
+                            
+                            6. Manual Memory Management : While C++ offers higher-level memory management facilities, you can still manually manage memory using pointers and arrays. However, this approach requires careful handling to avoid memory leaks and dangling pointers.<br><br>
+                            
+                            Overall, memory management in C++ requires understanding various techniques and choosing the appropriate one based on factors like performance, safety, and complexity of the application. Proper memory management is crucial for writing robust and efficient C++ programs.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Function overriding</summary>
+                        <p>Function overriding is a feature in C++ that allows a derived class to provide a specific implementation of a function that is already defined in its base class. When a derived class defines a function with the same name, return type, and parameters as a function in its base class, it overrides the base class's function. This allows polymorphic behavior, where a function call can dynamically choose the appropriate function implementation based on the object's actual type at runtime.<br><br>
+
+                            Here's an example to illustrate function overriding:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            using namespace std;<br>
+                            
+                            // Base class<br>
+                            class Base {<br>
+                            public:<br>
+                                // Virtual function<br>
+                                virtual void display() {<br>
+                                    cout << "Display from Base" << endl;<br>
+                                }<br>
+                            };<br>
+                            
+                            // Derived class<br>
+                            class Derived : public Base {<br>
+                            public:<br>
+                                // Override the display() function of the base class<br>
+                                void display() override {<br>
+                                    cout << "Display from Derived" << endl;<br>
+                                }<br>
+                            };<br>
+                            
+                            int main() {<br>
+                                Base *ptr;<br>
+                                Derived obj;
+                                <br>
+                                // Pointer to Base class pointing to a Derived class object<br>
+                                ptr = &obj;<br>
+                            
+                                // Call function using the base class pointer<br>
+                                ptr->display(); // Calls the display() function of Derived class<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            In this example:<br>
+                            
+                            - `Base` class has a virtual function `display()`.<br>
+                            - `Derived` class overrides the `display()` function of the base class with its own implementation.<br>
+                            - In the `main()` function, a pointer of type `Base` points to a `Derived` object.<br>
+                            - When `ptr->display()` is called, the `display()` function of the `Derived` class is invoked due to dynamic binding, which selects the appropriate function implementation based on the object's actual type (`Derived`).<br><br>
+                            
+                            Key points regarding function overriding:<br>
+                            
+                            - The base class function must be declared as `virtual` for it to be overridden.<br>
+                            - In the derived class, the function signature (name, return type, and parameters) must match exactly with the base class's virtual function.<br>
+                            - It's recommended to use the `override` keyword in the derived class to explicitly indicate that the function is intended to override a base class function. This helps catch errors during compilation if the function signatures do not match.<br><br>
+                            
+                            Function overriding is a fundamental concept in achieving runtime polymorphism in C++. It allows for more flexible and extensible code by enabling different behavior for functions with the same interface in different classes within an inheritance hierarchy.</p>
+                       
+                    </details>
+                    <h1 class="Heading head">Module 7</h1>
+                    <details>
+                        <summary>Inheritance</summary>
+                        <p>Inheritance is a fundamental feature of object-oriented programming (OOP) in C++, allowing one class to inherit properties and behavior (member variables and member functions) from another class. The class that inherits is called the derived class or subclass, and the class that is inherited from is called the base class or superclass.<br><br>
+
+                             Syntax of Inheritance:<br>
+                            
+                            ```cpp<br>
+                            class Base {<br>
+                            public:<br>
+                                // Base class members<br>
+                            };<br>
+                            
+                            class Derived : access_specifier Base {<br>
+                            public:<br>
+                                // Derived class members<br>
+                            };<br>
+                            ```<br><br>
+                            
+                            - `access_specifier` can be `public`, `protected`, or `private`. It specifies how the inherited members are accessible in the derived class. If not specified, it defaults to `private`.<br><br>
+                            
+                             Types of Inheritance:<br><br>
+                            
+                            1. Public Inheritance :<br>
+                               - Public members of the base class become public members of the derived class.<br>
+                               - Protected members of the base class become protected members of the derived class.<br><br>
+                            
+                               ```cpp<br>
+                               class Derived : public Base {<br>
+                                   // Derived class members can access public and protected members of Base<br>
+                               };<br>
+                               ```<br><br>
+                            
+                            2. Protected Inheritance :<br>
+                               - Public and protected members of the base class become protected members of the derived class.<br><br>
+                            
+                               ```cpp<br>
+                               class Derived : protected Base {<br>
+                                   // Derived class members can access protected members of Base<br>
+                               };<br>
+                               ```<br><br>
+                            
+                            3. Private Inheritance :<br>
+                               - Public and protected members of the base class become private members of the derived class.<br><br>
+                            
+                               ```cpp<br>
+                               class Derived : private Base {<br>
+                                   // Derived class members can access private members of Base<br>
+                               };<br>
+                               ```<br><br>
+                            
+                             Example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            using namespace std;<br>
+                            
+                            // Base class<br>
+                            class Shape {<br>
+                            public:<br>
+                                void setWidth(int w) {<br>
+                                    width = w;<br>
+                                }<br>
+                                void setHeight(int h) {<br>
+                                    height = h;<br>
+                                }<br>
+                            protected:<br>
+                                int width;<br>
+                                int height;<br>
+                            };<br>
+                            
+                            // Derived class<br>
+                            class Rectangle : public Shape {<br>
+                            public:<br>
+                                int getArea() {<br>
+                                    return (width * height);<br>
+                                }<br>
+                            };<br>
+                            
+                            int main() {<br>
+                                Rectangle rect;<br>
+                                rect.setWidth(5);<br>
+                                rect.setHeight(7);<br>
+                            
+                                // Accessing inherited member function<br>
+                                cout << "Area of the Rectangle: " << rect.getArea() << endl;<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            In this example:<br>
+                            - `Rectangle` inherits from `Shape`.<br>
+                            - `Rectangle` can access the `setWidth()` and `setHeight()` functions from `Shape`.<br>
+                            - `Rectangle` can access the `width` and `height` member variables because they are protected in `Shape`.<br><br>
+                            
+                            Inheritance allows for code reuse, extending existing classes' functionality, and implementing polymorphism through virtual functions. However, it should be used judiciously to maintain a clear class hierarchy and avoid excessive coupling between classes.</p>
+                       
+                    </details>
+                    <details>
+                        <summary>Friend function</summary>
+                        <p>In C++, a friend function is a function that is not a member of a class but has access to the class's private and protected members. Friend functions are declared in a class with the `friend` keyword. They can access private and protected members of the class as if they were regular functions declared outside the class.<br><br>
+
+                            Here's how you can declare and define a friend function:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            using namespace std;<br>
+                            
+                            // Forward declaration of class<br>
+                            class MyClass;<br>
+                            
+                            // Declaration of friend function<br>
+                            void friendFunction(MyClass obj);<br>
+                            
+                            // Class declaration<br>
+                            class MyClass {<br>
+                            private:<br>
+                                int privateMember;<br>
+                            
+                            public:<br>
+                                MyClass() : privateMember(10) {}<br>
+                            
+                                // Declaring friend function<br>
+                                friend void friendFunction(MyClass obj);<br>
+                            };<br>
+                            
+                            // Definition of friend function<br>
+                            void friendFunction(MyClass obj) {<br>
+                                // Friend function can access private members of MyClass<br>
+                                cout << "Private member accessed via friend function: " << obj.privateMember << endl;<br>
+                            }<br>
+                            
+                            int main() {<br>
+                                MyClass obj;<br>
+                                
+                                // Calling friend function<br>
+                                friendFunction(obj);<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            In this example:<br>
+                            
+                            - We declare a class `MyClass` with a private member `privateMember`.<br>
+                            - We forward declare the friend function `friendFunction` outside the class.<br>
+                            - Inside the class, we declare `friendFunction` as a friend using the `friend` keyword.<br>
+                            - Outside the class, we define the `friendFunction` that takes an object of `MyClass` as a parameter.<br>
+                            - Inside the `friendFunction`, we can access the private member `privateMember` of `MyClass` because it is declared as a friend.<br><br>
+                            
+                            It's important to note that while friend functions can access private and protected members of a class, they are not member functions of the class. They are standalone functions that have been granted access to the class's private and protected members.<br><br>
+                            
+                            Friend functions are often used in scenarios where certain operations need access to private members of a class but do not logically belong as member functions of the class itself. However, their use should be judicious, as they can break encapsulation and may lead to less maintainable code if used excessively.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Virtual function</summary>
+                        <p>In C++, a virtual function is a member function of a base class that is declared with the `virtual` keyword and is intended to be overridden in derived classes. Virtual functions enable runtime polymorphism, allowing different derived classes to provide their own implementation of the same function.<br><br>
+
+                            Here's an example to illustrate the concept of virtual functions:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            using namespace std;<br>
+                            
+                            // Base class<br>
+                            class Base {<br>
+                            public:<br>
+                                // Virtual function<br>
+                                virtual void display() {<br>
+                                    cout << "Display from Base" << endl;<br>
+                                }<br>
+                            };<br>
+                            
+                            // Derived class<br>
+                            class Derived : public Base {<br>
+                            public:<br>
+                                // Override the display() function of the base class<br>
+                                void display() override {<br>
+                                    cout << "Display from Derived" << endl;<br>
+                                }<br>
+                            };<br>
+                            
+                            int main() {<br>
+                                Base *ptr;<br>
+                                Derived obj;<br>
+                            
+                                // Pointer to Base class pointing to a Derived class object<br>
+                                ptr = &obj;<br>
+                            
+                                // Call function using the base class pointer<br>
+                                ptr->display(); // Calls the display() function of Derived class<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            In this example:<br><br>
+                            
+                            - `Base` class has a virtual function `display()`.<br>
+                            - `Derived` class overrides the `display()` function of the base class with its own implementation.<br>
+                            - In the `main()` function, a pointer of type `Base` points to a `Derived` object.<br>
+                            - When `ptr->display()` is called, the `display()` function of the `Derived` class is invoked due to dynamic binding, which selects the appropriate function implementation based on the object's actual type (`Derived`).<br><br>
+                            
+                            Key points regarding virtual functions:<br><br>
+                            
+                            - Virtual functions are declared in the base class using the `virtual` keyword and can be overridden by derived classes.<br>
+                            - The function signatures (name and parameters) of the virtual functions in the derived classes must match exactly with those in the base class.<br>
+                            - Virtual functions enable runtime polymorphism, where the appropriate function implementation is determined dynamically based on the object's actual type.<br>
+                            - If a derived class does not provide its own implementation for a virtual function, the base class's implementation will be called.<br>
+                            - Virtual functions are typically used in class hierarchies where a base class defines a common interface, and derived classes provide specialized implementations.<br><br>
+                            
+                            Virtual functions play a crucial role in achieving polymorphic behavior in C++, allowing for more flexible and extensible code by enabling different behavior for functions with the same interface in different classes within an inheritance hierarchy.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Class Templates</summary>
+                        <p>Class templates in C++ allow you to create a template that can work with any data type. This enables you to write a class once and use it with different data types without duplicating code. Class templates are particularly useful for creating generic data structures like containers (e.g., arrays, linked lists, trees) and algorithms that operate on those containers.<br><br>
+
+                            Here's a basic example of a class template for a generic container:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            using namespace std;<br>
+                            
+                            // Class template declaration<br>
+                            template<typename T><br>
+                            class Container {<br>
+                            private:<br>
+                                T item;<br>
+                            
+                            public:<br>
+                                Container(T item) : item(item) {}<br>
+                            
+                                void display() {<br>
+                                    cout << "Item: " << item << endl;<br>
+                                }<br>
+                            };<br>
+                            
+                            int main() {<br>
+                                // Create instances of Container with different data types<br>
+                                Container<int> intContainer(10);<br>
+                                Container<double> doubleContainer(3.14);<br>
+                                Container<string> stringContainer("Hello");<br>
+                            
+                                // Display contents of containers<br>
+                                intContainer.display();<br>
+                                doubleContainer.display();<br>
+                                stringContainer.display();<br>
+                                
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            In this example:<br><br>
+                            
+                            - We declare a class template `Container` using the `template<typename T>` syntax, where `T` is a placeholder for the data type.<br>
+                            - Inside the class template, we can use `T` as if it were a regular data type.<br>
+                            - In the `main()` function, we create instances of `Container` with different data types (`int`, `double`, `string`) by specifying the data type within angle brackets (`<>`) after the class name.<br>
+                            - Each instance of `Container` operates on its respective data type without duplicating the class implementation.<br><br>
+                            
+                            Class templates are very flexible and can be used with any data type that supports the operations used within the template. They provide a powerful mechanism for writing reusable code that can adapt to different data types. Additionally, class templates are extensively used in the C++ Standard Library, where they form the foundation for many generic data structures and algorithms.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Inheritance access control</summary>
+                        
+                        <p>In C++, inheritance access control determines how the members (functions and variables) of a base class are inherited by derived classes. C++ provides three access specifiers for controlling the accessibility of base class members in derived classes:<br><br>
+
+                            1. Public Inheritance : When a class is publicly inherited, public members of the base class become public members of the derived class, protected members of the base class become protected members of the derived class, and private members of the base class remain inaccessible in the derived class.<br><br>
+                            
+                               ```cpp<br>
+                               class Base {<br>
+                               public:<br>
+                                   int publicMember;<br>
+                               protected:<br>
+                                   int protectedMember;<br>
+                               private:<br>
+                                   int privateMember;<br>
+                               };<br>
+                            
+                               class Derived : public Base {<br>
+                                   // publicMember is public in Derived<br>
+                                   // protectedMember is protected in Derived<br>
+                                   // privateMember is inaccessible in Derived<br>
+                               };<br>
+                               ```<br><br>
+                            
+                            2. Protected Inheritance : When a class is protectedly inherited, public and protected members of the base class become protected members of the derived class, and private members of the base class remain inaccessible in the derived class.<br><br>
+                            
+                               ```cpp<br>
+                               class Derived : protected Base {<br>
+                                   // publicMember and protectedMember are protected in Derived<br>
+                                   // privateMember is inaccessible in Derived<br>
+                               };<br>
+                               ```<br><br>
+                            
+                            3. Private Inheritance : When a class is privately inherited, public and protected members of the base class become private members of the derived class, and private members of the base class remain inaccessible in the derived class.<br><br>
+                            
+                               ```cpp<br>
+                               class Derived : private Base {<br>
+                                   // publicMember and protectedMember are private in Derived<br>
+                                   // privateMember is inaccessible in Derived<br>
+                               };<br>
+                               ```<br><br>
+                            
+                            Here's a summary of how inheritance access control affects member accessibility:<br><br>
+                            
+                            - Public Members : Always inherited with the same access control (public members remain public).<br>
+                            -  Protected Members : Inherited with the same or stricter access control (protected members can become protected or private).<br>
+                            - Private Members : Inaccessible in derived classes regardless of the inheritance access specifier used.<br><br>
+                            
+                            It's important to note that access control in C++ is a compile-time feature and doesn't affect runtime behavior. Access specifiers control the visibility of members during compilation, ensuring encapsulation and data hiding.<br><br>
+                            
+                            Choosing the appropriate inheritance access control depends on the design and requirements of your classes. Public inheritance is the most common form, while protected and private inheritance are less common and typically used for specific scenarios where tighter control over member accessibility is necessary.</p>
+                    </details>
+                    <details>
+                        <summary>Multiple & multilevel inheritance</summary>
+                        <p>In C++, multiple inheritance allows a class to inherit from multiple base classes, while multilevel inheritance involves inheritance hierarchies where a derived class serves as the base class for another class, creating multiple levels of inheritance.<br><br>
+
+                             Multiple Inheritance:<br>
+                            
+                            In multiple inheritance, a derived class can inherit from more than one base class. Here's a basic example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            using namespace std;<br>
+                            
+                            // Base class 1<br>
+                            class Base1 {<br>
+                            public:<br>
+                                void display1() {<br>
+                                    cout << "Display from Base1" << endl;<br>
+                                }<br>
+                            };<br>
+                            
+                            // Base class 2<br>
+                            class Base2 {<br>
+                            public:<br>
+                                void display2() {<br>
+                                    cout << "Display from Base2" << endl;<br>
+                                }<br>
+                            };<br>
+                            
+                            // Derived class inheriting from Base1 and Base2<br>
+                            class Derived : public Base1, public Base2 {<br>
+                            public:<br>
+                                void displayDerived() {<br>
+                                    cout << "Display from Derived" << endl;<br>
+                                }<br>
+                            };<br>
+                            
+                            int main() {<br>
+                                Derived obj;<br>
+                                obj.display1(); // Accessing display1() from Base1<br>
+                                obj.display2(); // Accessing display2() from Base2<br>
+                                obj.displayDerived(); // Accessing displayDerived() from Derived<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            In this example, the `Derived` class inherits from both `Base1` and `Base2`. Objects of `Derived` class have access to members of both base classes.<br>
+                            
+                             Multilevel Inheritance:<br>
+                            
+                            In multilevel inheritance, a derived class serves as the base class for another class, creating a hierarchy of inheritance levels. Here's an example:<br><br>
+                            
+                            ```cpp<br>
+                            #include <iostream><br>
+                            using namespace std;<br>
+                            
+                            // Base class<br>
+                            class Base {<br>
+                            public:<br>
+                                void displayBase() {<br>
+                                    cout << "Display from Base" << endl;<br>
+                                }<br>
+                            };<br>
+                            
+                            // Derived class inheriting from Base<br>
+                            class Derived1 : public Base {<br>
+                            public:<br>
+                                void displayDerived1() {<br>
+                                    cout << "Display from Derived1" << endl;<br>
+                                }<br>
+                            };<br>
+                            
+                            // Derived class inheriting from Derived1<br>
+                            class Derived2 : public Derived1 {<br>
+                            public:<br>
+                                void displayDerived2() {<br>
+                                    cout << "Display from Derived2" << endl;<br>
+                                }<br>
+                            };<br>
+                            
+                            int main() {<br>
+                                Derived2 obj;<br>
+                                obj.displayBase(); // Accessing displayBase() from Base<br>
+                                obj.displayDerived1(); // Accessing displayDerived1() from Derived1<br>
+                                obj.displayDerived2(); // Accessing displayDerived2() from Derived2<br>
+                            
+                                return 0;<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            In this example, `Derived1` inherits from `Base`, and `Derived2` inherits from `Derived1`. Objects of `Derived2` class have access to members of all three classes: `Base`, `Derived1`, and `Derived2`.<br><br>
+                            
+                            Both multiple and multilevel inheritance provide flexibility in designing class hierarchies. However, they should be used judiciously to maintain code clarity and to avoid issues like the diamond problem in multiple inheritance.</p>
+                    </details>
+                    <h1 class="Heading head">Module 8</h1>
+                    <details>
+                        <summary>Assignment 1</summary>
+                        <p>1. Write a program to find the sum of all prime numbers within a given range.</p>
+                        <p>2. Create a simple text-based game using classes and inheritance. For example, implement a game where different characters (like warriors, mages, etc.) can fight against enemies.</p>
+                    </details>
+                    <details>
+                        <summary>Assignment 2</summary>
+                        <p>1. Implement a binary search tree (BST) data structure in C++ with methods to insert, delete, search, and display nodes.</p>
+                        <p>2. Develop a program to perform matrix multiplication for two given matrices.</p>
+                    </details>
+                    <details>
+                        <summary>Assignment 3</summary>
+                        <p>1. Create a program to manage a bank system, allowing users to create accounts, deposit money, withdraw money, and view account balance.</p>
+                        <p>2. Write a C++ program to implement various sorting algorithms like bubble sort, insertion sort, selection sort, and quicksort, allowing users to choose the algorithm to sort an array of integers.
+                        </p>
+                    </details>
+                </section>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <script src="js/front.js"></script>
+    <script>
+          function login() {
+    var username = document.getElementById('username').value;
+    var firstLetter = username.charAt(0).toUpperCase();
+    document.getElementById('user').innerHTML = '<a href="#" onclick="showOptions()">' + firstLetter + '</a>';
+    document.getElementById('login-form').classList.add('hidden');
+  }
+
+  function showOptions() {
+    var userOptions = document.getElementById('user-options');
+    if (userOptions.classList.contains('hidden')) {
+      userOptions.classList.remove('hidden');
+    } else {
+      userOptions.classList.add('hidden');
+    }
+  }
+
+  document.getElementById('user').addEventListener('click', function() {
+    document.getElementById('login-form').classList.toggle('hidden');
+  });
+    </script>
+
+</body>
+
+</html>

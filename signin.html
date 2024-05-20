@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="entered">
+
+<head>
+  <title>J-Sout Sign In Form </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/signin.css">
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="img_container" style="margin-left: 65%;">
+    <iframe src="https://giphy.com/embed/L1R1tvI9svkIWwpVYr" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  </div>
+
+  <div class="wrapper">
+    <div id="user"></div>
+    <div id="user-options" class="hidden">
+      <a href="signin.html" onclick="logout()">Logout</a>
+      <a href="user.html">Profile</a>
+    </div>
+  </div>
+
+  <form name="myForm" id="login-form" action="php/signin.php" method="POST">
+
+    <div class="login-box">
+
+      <h1> Sign In </h1>
+
+      <div class="textbox">
+
+        <input type="text" id="username" placeholder="Username" name="user" value="" required>
+
+      </div>
+      <div class="textbox">
+        <input type="password" placeholder="Password" name="pass" value="" maxlength="8" required>
+      </div>
+
+      <input class="btn" type="button" onclick="login()" value="Sign in">
+      <center><b><a style="color: rgb(255, 255, 255);" href="signup.html"> Don't have an account ? </a></b> </center>
+    </div>
+
+  </form>
+
+  <script>
+    function login() {
+      var username = document.getElementById('username').value;
+      var firstLetter = username.charAt(0).toUpperCase();
+      document.getElementById('user').innerHTML = '<a href="#" onclick="showOptions()">' + firstLetter + '</a>';
+      document.getElementById('login-form').classList.add('hidden');
+    }
+
+    function showOptions() {
+      var userOptions = document.getElementById('user-options');
+      if (userOptions.classList.contains('hidden')) {
+        userOptions.classList.remove('hidden');
+      } else {
+        userOptions.classList.add('hidden');
+      }
+    }
+
+    function logout() {
+      // Implement your logout functionality here
+      // For now, let's just refresh the page
+      location.reload();
+    }
+
+    document.getElementById('user').addEventListener('click', function() {
+      document.getElementById('login-form').classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+
+</html>

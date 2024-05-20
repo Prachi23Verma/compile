@@ -1,0 +1,577 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: black;
+    
+}
+
+.main_container{
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+   
+}
+.hero_section{
+   text-align: center;
+   width: 100%;
+   height: 100vh;
+   
+} 
+
+nav{
+  
+    background-color: rgb(132, 50, 28);  
+    box-shadow: 0px 0px 5px 3px rgb(167, 147, 147);
+    opacity: 0.8;
+  
+}
+
+
+nav ul{
+    width: 100%;
+    list-style: none ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .logo{
+    width: 100px;
+}  
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    opacity: 1;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    transition-duration: 0.5s;
+}
+
+nav a:hover{
+    background-color: #ffffff;
+    color: orangered;
+    border: 0px 0px 3px 3px solid black;
+    border-radius: 30px;
+    font-size: 17px;
+    
+
+    
+}
+
+nav li:first-child{
+    margin-right: auto;
+    opacity: 1;
+}
+
+
+.sidebar{
+   position: fixed;
+   top: 0;
+   right: 0;
+   height: 100vh;
+   width: 250px;
+   z-index: 999;
+   background-color: rgba(255, 255, 255, 0.267);
+   backdrop-filter: blur(10px);
+   box-shadow: -10px 0 10px rgba(0 , 0 , 0 , 0.1);
+   display: none;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
+
+
+.Heading {
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 700;
+ 
+}
+.Main-heading{
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 10px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    transition: 0.5s ease;
+}
+
+.Main-heading span{
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    color: orangered;
+
+}
+
+.Heading span{
+    color: orangered;
+    font-weight: 900;
+    
+    /* font-family: 'Dancing Script', cursive; */
+}
+
+.para{
+    color: aliceblue;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1.2s;
+}
+
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.Astro{
+    margin-top: 100px;
+}
+.img{
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.para{
+    font-weight: 650;
+    font-size: 1.3rem;
+}
+
+ .btn{
+    border: 1px solid orangered;
+    border-radius: 10px;
+    font-size: 4px;
+    /* box-shadow: 0px 0px 10px  0px rgb(255, 111, 0); */
+}
+
+ .btn{
+    font-size: 20px;
+    padding: 8px;
+    margin-top: 10px;
+    text-decoration: none;
+    color:orangered;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background:orangered;
+    color:orangered ;
+    letter-spacing: 0.35em;
+    box-shadow: 0 0 35px orangered ;
+}
+  .btn:before{
+    content:'' ;
+    position: absolute;
+    inset: 2px;
+    background: #000000;
+    
+}
+
+ .btn span{
+    position: relative;
+    z-index: 1;
+}
+
+ .btn i{
+   position: absolute;
+   inset: 0;
+   display: block;
+}
+ .btn i::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;  
+    transform: translate(-50%) skewX(325deg);
+    transition: 0.5s;
+
+}
+
+.Astro p span{
+    color:orangered;
+}
+
+
+@media (min-aspect-ratio:16/9) {
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9){
+     .background-clip{
+        width: auto;
+        height: 100%;
+     }
+}
+ 
+@media (min-aspect-ratio:16/9) {
+    .background-clip1{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-aspect-ratio:16/9){
+    .background-clip1{
+       width: auto;
+       height: 100%;
+    }
+}
+
+
+@keyframes slideBottom  {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideLeft  {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.menu-button{
+    display: none;
+} 
+
+
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media(max-width:800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width : 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
+
+.Second{
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Second .content{
+    position: absolute;
+    top: 135%;
+    height: auto;
+    width: 100%;
+    
+    
+}
+
+
+
+.Second .content h1{
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-family: "Fredoka", sans-serif;
+    text-shadow: 5px 5px 10px orangered ;
+    letter-spacing: 10px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in;
+    color: aliceblue;
+
+}
+
+
+/* .Second .content h1:hover{
+    color:orangered;
+    text-shadow: 5px 5px 10px aliceblue ;
+    cursor: pointer;
+} */
+
+.vision{
+    height: 300px;
+    width:600px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px aliceblue;
+    display: flex;
+    text-align: center;
+   
+    margin-top: 30px;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in;
+    
+
+}
+
+.vision:hover{
+    box-shadow: 10px 10px 0px 0px aliceblue;
+    width: 630px;
+    height: 330px;
+}
+
+.us{
+   
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    
+}
+
+.us .bg img{
+    opacity: 0.7;
+}
+
+.us .about-us{
+    position: absolute;
+    top: 300%;
+}
+
+
+.us h1{
+    width: 100%;
+    position: absolute;
+    top: 270%;
+    text-align: center;
+    font-family: "Fredoka", sans-serif;
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: orangered;
+
+}
+
+.us .logo img {
+    position: absolute;
+   
+    top: 250%;
+}
+
+.us .logo{
+    width: 100%;
+    margin-left: 45%;
+}
+
+.about-us{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+/* komal */
+
+.about-us .komal{
+    margin-left: 20px;
+}
+
+.about-us .komal h2{
+    margin-left: 25px;
+    font-size:50px;
+    letter-spacing: 3px;
+}
+
+.about-us .komal h3 ,p{
+    margin-left: 25px;
+}
+
+.about-us .komal h3 span{
+    color: orangered;
+    font-size: 25px;
+}
+
+.about-us .komal h3{
+    font-size: 23px;
+}
+
+
+ /* Prachi */
+.about-us .Prachi img{
+    margin-left: 70%;
+}
+
+.about-us .Prachi h3{
+    margin-left: 66%;
+}
+
+
+.about-us .Prachi h2{
+    margin-left: 30%;
+}
+
+.about-us .Prachi .Prachi-creator{
+    margin-left: 30%;
+}
+.about-us .Prachi p{
+    margin-right: 80px;
+}
+
+.about-us .Prachi span{
+    color: orangered;
+    font-size: 25px;
+}
+
+
+.about-us .Prachi h2{
+    
+    font-size:50px;
+    letter-spacing: 3px;
+}
+
+.about-us .Prachi h3{
+    font-size: 23px;
+}
+
+
+
+.contact-komal{
+    width: 100%;
+}
+
+
+.about-us .komal .contact-komal{
+    margin-left: 15px;
+}
+
+.about-us .komal .contact-komal a{
+display:inline-flex; 
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+background: transparent;
+border: 2px solid orangered;
+border-radius: 50%;
+color: orangered;
+text-decoration: none;
+opacity: 0;
+animation: slideLeft 1s ease forwards;
+animation-delay: calc(0.2s * var(--i));
+transition: 0.5s ease;
+margin: 30px 15px 30px 0;
+}
+
+.about-us .komal .contact-komal a:hover{
+    background: orangered;
+    color:aliceblue;
+    box-shadow: 0 0 20px orangered;
+    transition-duration: 0.2s;
+}
+
+
+.contact-prachi{
+    width: 100%;
+}
+
+
+.about-us .Prachi .contact-prachi{
+    margin-left: 55%;
+}
+
+.about-us .Prachi .contact-prachi a{
+display:inline-flex; 
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+background: transparent;
+border: 2px solid orangered;
+border-radius: 50%;
+color: orangered;
+text-decoration: none;
+opacity: 0;
+animation: slideLeft 1s ease forwards;
+animation-delay: calc(0.2s * var(--i));
+transition: 0.5s ease;
+margin: 30px 15px 30px 0;
+}
+
+.about-us .Prachi .contact-prachi a:hover{
+    background: orangered;
+    color: aliceblue;
+    box-shadow: 0 0 20px orangered;
+    transition-duration: 0.2s;
+}
+@keyframes slideLeft  {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+} 

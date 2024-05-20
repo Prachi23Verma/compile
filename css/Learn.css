@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.main-box{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+nav{
+
+    margin-top: 20px;
+    /* background-color: rgb(0, 0, 0); */
+    /* backdrop-filter: blur(10px); */
+    /* box-shadow: 0px 0px 5px 3px rgb(167, 147, 147); */
+}
+
+.welcome h1{
+    display:inline-flex; 
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+    transition: 0.5s ease;
+
+}
+
+.welcome h1 span{
+    color: orangered;;
+}
+
+.content{
+    max-width: 40%;
+}
+nav ul{
+    width: 100%;
+    height: 80px;
+    list-style: none ;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+nav .logo{
+    width: 200px;
+}  
+
+nav a{
+   margin-left: 25px;
+   margin-right: 25px;
+   margin-top: 15px;
+}
+ .Hero{
+    height: 80%;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-left: 50px;
+    margin-right: 20px;
+    
+    
+   
+   
+} 
+
+.main-box{
+    background-image: url("../image/Learn-bg1.png");
+    background-size: cover;
+    
+}
+
+.content{
+    text-align: center;
+}
+/* 
+.Parallax{
+    margin-bottom: -50px;
+    width: 100%;
+    height:100%;
+    
+} */
+
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+} 
+
+
+.layer:nth-child(1){
+   background-image: url("../image/Saturn(1).png");
+   background-size:cover;
+    
+} 
+
+
+.layer:nth-child(2){
+    background-image: url("../image/Path(1).png");
+    background-size: cover;
+     
+ } 
+
+ 
+.layer:nth-child(3){
+    background-image: url("../image/Astro(1).png");
+    background-size: cover;
+     
+ } 
+
+ 
+.layer:nth-child(4){
+    background-image: url("../image/Spaceship(1).png");
+    background-size: cover;
+     
+ } 
+
+ .layer:nth-child(5){
+    background-image: url("../image/uranus(1).png");
+    background-size: cover;
+     
+ } 
+
+ .layer:nth-child(6){
+    background-image: url("../image/Venus.png");
+    background-size: cover;
+     
+ } 
+  
+
+
+ @keyframes slideLeft  {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+/* Card-Section */
+
+.card-section{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+.wrapper {
+    position:absolute;
+    
+    
+    
+    width: 100%;
+    height:auto;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    top: 30%;
+    
+}
+
+.card {
+    position: relative;
+    width: 325px;
+    height: 450px;
+    background: #000;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.poster {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.poster::before {
+    content: '';
+    position: absolute;
+    bottom: -45%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: .3s;
+}
+
+.card:hover .poster::before {
+    bottom: 0;
+}
+
+.poster img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+    
+}
+
+.card:hover .poster img {
+    transform: scale(1.1);
+}
+
+.details {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1.5em 1.5em 2em;
+    background: #000a;
+    backdrop-filter: blur(16px) saturate(120%);
+    transition: .3s;
+    color: #fff;
+    z-index: 2;
+}
+
+.card:hover .details {
+    bottom: 0;
+}
+
+.details h1,
+.details h2 {
+    font-weight: 700;
+}
+
+.details h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.details h2 {
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 10px;
+    opacity: .6;
+}
+
+
+.details .desc {
+    color: #fff;
+    opacity: .8;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.button a{
+    border: 1px solid orangered;
+    border-radius: 10px;
+    text-decoration: none;
+    color: orangered;
+    /* width: 100%; */
+    width: 50%;
+   text-align: center;
+}
+
+.button{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button a:hover{
+    background: orangered;
+    color: white;
+    letter-spacing: 0.35em;
+    box-shadow: 0 0 35px orangered ;
+}
+
+
+
+

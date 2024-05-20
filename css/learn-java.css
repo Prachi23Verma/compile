@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+    
+}
+
+.main_container{
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+   
+}
+.hero_section{
+   text-align: center;
+   width: 100%;
+   height: 100vh;
+   
+} 
+
+nav{
+  
+    background-color: rgb(132, 50, 28);
+    box-shadow: 0px 0px 5px 3px rgb(167, 147, 147);
+    opacity: 0.8;
+  
+}
+
+
+nav ul{
+    width: 100%;
+    list-style: none ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .logo{
+    width: 100px;
+}  
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    opacity: 1;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    transition-duration: 0.5s;
+}
+
+nav a:hover{
+    background-color: #ffffff;
+    color: orangered;
+    border: 0px 0px 3px 3px solid black;
+    border-radius: 30px;
+    font-size: 17px;
+    
+
+    
+}
+
+nav li:first-child{
+    margin-right: auto;
+    opacity: 1;
+}
+
+
+.sidebar{
+   position: fixed;
+   top: 0;
+   right: 0;
+   height: 100vh;
+   width: 250px;
+   z-index: 999;
+   background-color: rgba(255, 255, 255, 0.267);
+   backdrop-filter: blur(10px);
+   box-shadow: -10px 0 10px rgba(0 , 0 , 0 , 0.1);
+   display: none;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
+.Heading {
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 700;
+ 
+}
+.Main-heading{
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 10px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    transition: 0.5s ease;
+}
+
+.Main-heading span{
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    color: orangered;
+
+}
+
+.Heading span{
+    color: orangered;
+    font-weight: 900;
+    
+    /* font-family: 'Dancing Script', cursive; */
+}
+
+.para{
+    color: aliceblue;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1.2s;
+}
+ .background-clip{
+    position: absolute;
+    right: 0;
+    height: auto;
+    z-index: -1;
+    object-fit:cover;
+    display: flex;
+} 
+ .background-clip2{
+    position: absolute;
+    right: 0;
+    z-index: -1; 
+ } 
+
+.Astro{
+    margin-top: 100px;
+}
+.img{
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.para{
+    font-weight: 650;
+    font-size: 1.3rem;
+}
+
+ .btn{
+    border: 1px solid orangered;
+    border-radius: 10px;
+    font-size: 4px;
+    /* box-shadow: 0px 0px 10px  0px rgb(255, 111, 0); */
+}
+
+ .btn{
+    font-size: 20px;
+    padding: 8px;
+    margin-top: 10px;
+    text-decoration: none;
+    color:orangered;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background:orangered;
+    color:orangered ;
+    letter-spacing: 0.35em;
+    box-shadow: 0 0 35px orangered ;
+}
+  .btn:before{
+    content:'' ;
+    position: absolute;
+    inset: 2px;
+    background: #000000;
+    
+}
+
+ .btn span{
+    position: relative;
+    z-index: 1;
+}
+
+ .btn i{
+   position: absolute;
+   inset: 0;
+   display: block;
+}
+ .btn i::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;  
+    transform: translate(-50%) skewX(325deg);
+    transition: 0.5s;
+
+}
+
+.Astro p span{
+    color:orangered;
+}
+.second{
+    background-image: url("../image/Learn-bg1.png");
+    overflow: hidden;
+    position: relative;
+    background-color: #000000;
+    opacity: 0.9;
+    
+} 
+ 
+
+details{
+    margin: 0.rem;
+    font-size: 10px;
+      
+}
+.second .section details p{
+    width: 80%;
+    margin: 10px;
+    justify-items: center;
+    word-spacing: 5px;
+    margin-left: 10%;
+    line-height: 26pt;
+    font-size: 20px;
+    margin-top: 8px;
+    text-align: justify;
+    font-weight: lighter;
+}
+
+@media (min-aspect-ratio:16/9) {
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9){
+     .background-clip{
+        width: auto;
+        height: 100%;
+     }
+}
+ 
+@media (min-aspect-ratio:16/9) {
+    .background-clip1{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-aspect-ratio:16/9){
+    .background-clip1{
+       width: auto;
+       height: 100%;
+    }
+}
+
+
+@keyframes slideBottom  {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideLeft  {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.menu-button{
+    display: none;
+}
+
+
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media(max-width:800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width : 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+details[open] summary ~ *{
+    animation: open 0.3s ease-in-out;
+  }
+  @keyframes open{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+  details summary::-webkit-details-marker{
+    display: none;
+  }
+  details summary{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 2rem;
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+    
+  }
+ 
+  details summary{
+    outline: 0;
+  }
+  details p{
+    margin: 0 0 1rem;
+    padding-top: 1rem;
+    line-height: 1.5rem;
+    font-size: larger;
+  }
+  details summary:hover{
+    transform: scale(1.3);
+  }
+  .head{
+    margin-top: 3rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    color:black;
+    font-size: 5vw;
+    -webkit-text-stroke: 0.1vw white;
+  }
+ 

@@ -1,0 +1,2018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Doodle+Shadow&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/learn-java.css">
+    <title>Java</title>
+</head>
+
+<body>
+
+    <div class="main_container">
+
+        <div class="hero_section">
+            <video autoplay loop muted plays-inline class="background-clip">
+                <source src="video/Untitled design1.mp4" type="video/mp4">
+            </video>
+
+
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                viewBox="0 -960 960 960" width="24">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
+                    <li><a href="front.php">Home</a></li>
+                    <li><a href="#">User</a></li>
+                    <li><a href="Learn.php">Learn</a></li>
+                    <li><a href="index.php">Start Coding</a></li>
+                    <li id="user"><a href="signin.php">Login</a></li>
+                </ul>
+
+                <ul>
+                    <li> <a href="#"><img src="image/CodePilot-logo.png" alt="" class="logo"></a></li>
+                    <li class="hideOnMobile"><a href="front.php">Home</a></li>
+                    <li class="hideOnMobile"><a href="#">User</a></li>
+                    <li class="hideOnMobile"><a href="Learn.php">Learn</a></li>
+                    <li class="hideOnMobile"><a href="index.php">Start Coding</a></li>
+                    <li class="hideOnMobile" id="user"><a href="signin.php">Login</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="24" viewBox="0 -960 960 960" width="24">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
+                </ul>
+            </nav>
+            <div class="Astro">
+                <img src="image/astronaut.png" width="300px" class="img">
+                <h1 class="Main-heading" style="color: aliceblue;">Java<span>Pilot</span></h1>
+                <h2 class="Heading">Welcome <span class="auto-type"></span></h2>
+                <p class="para"> <span style="color: orangered;">CodePilot </span> : Where Curiosity Meets Code and
+                    Creativity Knows No Bounds.</p>
+                <div style="height: 9rem;"></div>
+
+
+            </div>
+
+
+            <div class="second">
+                <section class="section">
+                    <h1 class="Heading head">Module 1</h1>
+                    <details>
+                        <summary>Introduction to Java</summary>
+                        <p>Java is a versatile, object-oriented, and high-performance programming language that was initially developed by James Gosling and his team at Sun Microsystems in the mid-1990s. Over the years, Java has become one of the most widely used and influential programming languages, particularly in enterprise and web development.
+                        <br> To start programming in Java, you need to install the Java Development Kit (JDK), which includes the Java compiler (javac) for compiling source code and the Java Virtual Machine (JVM) for running Java applications. Once set up, you can use an Integrated Development Environment (IDE) like Eclipse, IntelliJ IDEA, or Visual Studio Code to write and manage your Java code.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Java Software</summary>
+                        <p>Java is a versatile and widely used programming language that enables the development of cross-platform applications. It is known for its portability, meaning that Java programs can run on various devices without modification. Java applications are typically compiled into an intermediate bytecode, which can then be executed on any device with a Java Virtual Machine (JVM). <br> This "write once, run anywhere" philosophy makes Java suitable for a diverse range of applications, including web development, mobile apps, enterprise software, and more. Java also provides a robust standard library, extensive community support, and features such as automatic memory management through garbage collection.</p>
+                    </details>
+                    <details>
+                        <summary>Java concepts</summary>
+                        <p>Java concepts refer to the fundamental principles and elements that form the basis of the Java programming language. These concepts help developers write efficient, reliable, and maintainable code. Some key Java concepts include: <br>
+
+                            1. Object-Oriented Programming (OOP): Java is an object-oriented language, emphasizing the use of classes and objects. OOP principles include encapsulation, inheritance, and polymorphism. <br>
+                            
+                            2. Classes and Objects: In Java, everything is considered an object. Classes are blueprints for creating objects, and objects are instances of classes. <br>
+                            
+                            3. Inheritance: It allows a class (subclass) to inherit properties and behaviors from another class (superclass). This promotes code reuse and supports the creation of a hierarchy of classes. <br>
+                            
+                            4. Polymorphism: Refers to the ability of objects to take on multiple forms. In Java, polymorphism is achieved through method overloading and method overriding. <br>
+                            
+                            5. Encapsulation: It involves bundling data (attributes) and methods that operate on the data within a single unit called a class. Access modifiers (public, private, protected) control the visibility of class members. <br>
+                            
+                            6. Abstraction: Abstraction involves simplifying complex systems by breaking them down into smaller, more manageable parts. In Java, abstract classes and interfaces facilitate abstraction. <br>
+                            
+                            7. Packages: Packages are used to organize classes into namespaces, preventing naming conflicts and enhancing code organization. The `import` statement is used to bring classes from other packages into the current code. <br>
+                            
+                            8. Interfaces: Interfaces define a contract for classes that implement them. They contain abstract methods that must be implemented by the implementing class. Multiple inheritance is achieved through interfaces in Java. <br>
+                            
+                            9. Exception Handling: Java provides a robust mechanism for handling errors and exceptions. The try-catch blocks help developers write code that gracefully handles unexpected situations. <br>
+                            
+                            10. Multithreading: Java supports multithreading, allowing the execution of multiple threads concurrently. This can improve the efficiency of programs, especially in tasks that can be parallelized. <br>
+                            
+                            11. Java Virtual Machine (JVM): Java programs are compiled into bytecode, which is executed by the JVM. This platform independence makes Java a "write once, run anywhere" language. <br>
+                            
+                            12. Garbage Collection: Java includes automatic memory management through garbage collection. This process identifies and removes objects that are no longer in use, preventing memory leaks. <br>
+                            
+                            Understanding and applying these concepts is crucial for Java developers to create robust and maintainable software.</p>
+                    </details>
+                    <h1 class="Heading head">Module 2</h1>
+                    <details>
+                        <summary>Write basic java programs</summary>
+                        <p> Here's a simple Java program that prints "Hello, World!" to the console:
+                              <br>
+                             <br>
+                                public class HelloWorld { <br>
+                                public static void main(String[] args) { <br>
+                                    System.out.println("Hello, World!"); <br>
+                                } <br>
+                            } 
+                            
+                            <br> <br>
+                            Let me break down the code for you: <br>
+                            
+                            - <em>`public class HelloWorld`</em>: This declares a class named <em>`HelloWorld`</em>. In Java, the file containing the main class must have the same name as the class (with a `.java` extension). <br>
+                            
+                            - <em>`public static void main(String[] args)` </em>: This is the main method, the entry point of the program. It is where the execution of the program begins. The <em>`args`</em> parameter allows you to pass command-line arguments, although they are not used in this example. <br>
+                            
+                            - <em>`System.out.println("Hello, World!");`</em>: This line prints the string "Hello, World!" to the console. The <em>`println`</em> method adds a newline character after printing the message.
+                             <br>
+                            To run this program: <br> <br>
+                            
+                            1. Save it in a file named <em>`HelloWorld.java`</em>. <br>
+                            2. Open a terminal or command prompt and navigate to the directory containing the file. <br>
+                            3. Compile the program by typing <em>`javac HelloWorld.java`</em> and pressing Enter. <br>
+                            4. Run the compiled program with <em> `java HelloWorld`</em>. You should see the output "Hello, World!" in the console.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Define variables</summary>
+                        <p>In Java, variables are containers for storing data values. They have a specific data type, which defines the kind of data that can be stored in them. Here's a brief overview of variables in Java:
+
+                            1. Declaring Variables:  To declare a variable in Java, you specify the data type, followed by the variable name. <br>
+                               - Example: <br> <br>
+                                 ```java <br>
+                                 int age;  // Declares an integer variable named 'age' <br>
+                                 ```
+                             <br> <br>
+                            2. Initializing Variables:  After declaring a variable, you can assign a value to it. This is known as initialization. <br>
+                               - Example: <br> <br>
+                                 ```java <br>
+                                 age = 25;  // Initializes the 'age' variable with the value 25 <br>
+                                 ```
+                            <br> <br>
+                            3. Combining Declaration and Initialization:  You can combine the declaration and initialization in a single line. <br>
+                               - Example: <br> <br>
+                                 ```java <br>
+                                 int age = 25;  // Declares and initializes the 'age' variable with the value 25 <br>
+                                 ```
+                             <br> <br>
+                            4. Variable Types: Java has several built-in data types for variables, including `int` (integer), `double` (floating-point number), `char` (character), `boolean` (true/false), and more. <br>
+                               - Example: <br> <br>
+                                 ```java <br>
+                                 double salary = 50000.5;  // Declares and initializes a double variable <br>
+                                 char grade = 'A';        // Declares and initializes a char variable <br>
+                                 boolean isStudent = true; // Declares and initializes a boolean variable <br>
+                                 ```
+                             <br> <br>
+                            5. Final Variables (Constants):  You can declare a variable as `final` to make it a constant. Once initialized, the value cannot be changed. <br>
+                               - Example: <br> <br>
+                                 ```java <br>
+                                 final int DAYS_IN_WEEK = 7;  // Declares a constant variable <br>
+                                 ```
+                            <br> <br>
+                            6. Naming Conventions:  Variable names are case-sensitive and should follow certain naming conventions. Common conventions include using camelCase for variable names (e.g., `myVariable`) and using descriptive names for clarity. <br>
+                            
+                            Here's a more complete example demonstrating the use of different types of variables:
+                            <br> <br>
+                            ```java
+                            public class VariableExample { <br>
+                                public static void main(String[] args) { <br>
+                                    // Integer variable <br>
+                                    int age = 25; <br>
+                            
+                                    // Floating-point variable <br>
+                                    double salary = 50000.5;<br>
+                            
+                                    // Character variable <br>
+                                    char grade = 'A'; <br>
+                            
+                                    // Boolean variable <br>
+                                    boolean isStudent = true; <br>
+                            
+                                    // Constant variable <br>
+                                    final int DAYS_IN_WEEK = 7; <br>
+                            
+                                    System.out.println("Age: " + age); <br>
+                                    System.out.println("Salary: " + salary);<br>
+                                    System.out.println("Grade: " + grade);<br>
+                                    System.out.println("Is Student: " + isStudent);<br>
+                                    System.out.println("Days in Week: " + DAYS_IN_WEEK);<br>
+                                }
+                            } ```
+                           <br> <br>                            
+                            In this example, we declare and initialize variables of different types, including integers, doubles, characters, booleans, and a constant. The program then prints the values of these variables to the console.</p>
+                    </details>
+                    <details>
+                        <summary>Using strings</summary>
+                        <p>In Java, you can use the `String` class to work with strings. Strings in Java are objects, and they are immutable, meaning their values cannot be changed after creation. Here are some basic examples of using strings in Java: <br> <br>
+
+                            # Declaring and Initializing Strings: <br> <br>
+                            
+                            ```java <br>
+                            // Declare a string variable <br>
+                            String greeting; <br>
+                            
+                            // Initialize a string variable <br>
+                            greeting = "Hello, World!"; <br>
+                            
+                            // Declare and initialize in a single line <br>
+                            String name = "John"; <br>
+                            ```
+                            <br> <br>
+                            # Concatenating Strings: <br> <br>
+                            
+                            ```java <br>
+                            String firstName = "John"; <br>
+                            String lastName = "Doe"; <br>
+                            
+                            // Concatenation using the + operator <br>
+                            String fullName = firstName + " " + lastName; <br>
+                            
+                            // Using the concat() method <br>
+                            String fullNameConcat = firstName.concat(" ").concat(lastName); <br>
+                            ```
+                            <br> <br>
+                            # String Length: <br> <br>
+                            
+                            ```java <br>
+                            String message = "This is a message."; <br>
+                            
+                            // Get the length of the string br
+                            int length = message.length(); <br>
+                            System.out.println("Length of the string: " + length); <br>
+                            ```
+                            <br> <br>
+                            # Accessing Characters in a String: <br> <br>
+                            
+                            ```java <br>
+                            String word = "Java"; <br>
+                            
+                            // Accessing characters using charAt() method <br>
+                            char firstChar = word.charAt(0); <br>
+                            char lastChar = word.charAt(word.length() - 1); <br>
+                            
+                            System.out.println("First character: " + firstChar); <br>
+                            System.out.println("Last character: " + lastChar); <br>
+                            ```
+                            <br> <br>
+                            # Comparing Strings:
+                            <br> <br>
+                            ```java <br>
+                            String str1 = "apple"; <br>
+                            String str2 = "banana"; <br>
+                            String str3 = "apple"; <br>
+                            
+                            // Using equals() method for content comparison <br>
+                            boolean isEqual = str1.equals(str2); // false <br>
+                            boolean isEqual2 = str1.equals(str3); // true <br>
+                            
+                            // Using compareTo() method for lexicographical comparison <br>
+                            int result = str1.compareTo(str2); // negative value <br>
+                            int result2 = str1.compareTo(str3); // 0 <br>
+                            ```
+                            <br> <br>
+                            Remember that when comparing strings for equality, it's generally recommended to use the `equals()` method instead of `==` because `==` checks if the references point to the same object, not if the content is the same.</p>
+                        <p></p>
+                    </details>
+                    <details>
+                        <summary>While loop</summary>
+                        <p>In Java, a `while` loop is a control flow statement that allows you to repeatedly execute a block of code as long as a specified condition evaluates to true. Here's a basic structure of a `while` loop:
+                         <br> <br>
+                            ```java <br>
+                            while (condition) { <br>
+                                // code to be executed while the condition is true <br>
+                            }  <br>
+                            ```
+                            <br> <br>
+                            The condition is a boolean expression. The loop will continue executing the code block as long as the condition remains true. Here's a simple example:
+                            <br> <br>
+                            ```java <br>
+                            public class WhileLoopExample { <br>    
+                                public static void main(String[] args) {<br>
+                                    int count = 1;<br>
+                            
+                                    // Using a while loop to print numbers 1 to 5<br>
+                                    while (count <= 5) { <br>
+                                        System.out.println("Count: " + count); <br>
+                                        count++;  // Increment count to eventually exit the loop <br>
+                                    } <br>
+                                }<br>
+                            }<br>
+                            ```
+                            <br><br>
+                            In this example, the `while` loop prints the value of `count` as long as it is less than or equal to 5. The `count++` statement increments the value of `count` in each iteration, ensuring that the loop will eventually exit when `count` becomes greater than 5. <br>
+                            
+                            It's essential to make sure that the loop condition will eventually become false to avoid an infinite loop. If the condition always remains true, the loop will continue indefinitely, and your program will not progress beyond that point.
+                            <br>
+                            Remember to update the loop control variable inside the loop body so that the loop will terminate at some point.</p>
+                        <p></p>
+                    </details>
+                    <details>
+                        <summary>For loop</summary>
+                        <p>In Java, the `for` loop is a control flow statement that provides a concise way to iterate over a range of values or elements. The general syntax of a `for` loop is as follows:
+                              <br> <br>
+                            ```java <br>
+                            for (initialization; condition; update) { <br>
+                                // code to be executed in each iteration <br>
+                            }
+                            ```
+                            <br><br>
+                            Here's a breakdown of the components: <br>
+                            
+                            - Initialization: Executed once at the beginning of the loop. Typically used to initialize a loop control variable.<br>
+                              
+                            - Condition: Evaluated before each iteration. If it is `true`, the loop continues; otherwise, it exits.<br>
+                              
+                            - Update: Executed at the end of each iteration. Usually used to modify the loop control variable.<br>
+                            
+                            Here's a simple example that prints numbers 1 to 5 using a `for` loop:<br><br>
+                            
+                            ```java <br>
+                            public class ForLoopExample { <br>
+                                public static void main(String[] args) { <br>
+                                    // Using a for loop to print numbers 1 to 5 <br>
+                                    for (int i = 1; i <= 5; i++) { <br>
+                                        System.out.println("Count: " + i); <br>
+                                    } <br>
+                                }<br>
+                            }
+                            ```
+                            <br><br>
+                            In this example: <br>
+                            
+                            - `int i = 1` initializes the loop control variable `i` to 1. <br>
+                            - `i <= 5` is the loop condition. The loop continues as long as `i` is less than or equal to 5. <br>
+                            - `i++` increments the value of `i` at the end of each iteration. <br> <br>
+                            
+                            The loop prints the value of `i` in each iteration until `i` becomes greater than 5, at which point the loop exits.
+                            <br>
+                            You can customize the initialization, condition, and update sections of the `for` loop to suit the specific requirements of your program.</p>
+                        <p></p>
+                    </details>
+                    <details>
+                        <summary>Enabling user input</summary>
+                        <p>In Java, you can enable user input using the `Scanner` class, which is part of the `java.util` package. The `Scanner` class allows you to read user input from the console. Here's a simple example:
+                           <br> <br>
+                            ```java <br>
+                            import java.util.Scanner; <br>
+                            
+                            public class UserInputExample { <br>
+                                public static void main(String[] args) { <br>
+                                    // Create a Scanner object to read input <br>
+                                    Scanner scanner = new Scanner(System.in); <br>
+                            
+                                    // Prompt the user for input <br>
+                                    System.out.print("Enter your name: "); <br>
+                            
+                                    // Read the user's input <br>
+                                    String userName = scanner.nextLine(); <br>
+                            
+                                    // Display the user's input <br>
+                                    System.out.println("Hello, " + userName + "!"); <br>
+                            
+                                    // Close the Scanner to avoid resource leaks <br>
+                                    scanner.close(); <br>
+                                } <br>
+                            }
+                            ```
+                            <br><br>
+                            In this example: <br> <br>
+                            
+                            1. We import the `Scanner` class from the `java.util` package. <br>
+                            2. We create a `Scanner` object (`scanner`) that reads input from the standard input stream (`System.in`), which is typically the console. <br>
+                            3. We prompt the user to enter their name using `System.out.print`. <br>
+                            4. We use the `nextLine()` method of the `Scanner` class to read the entire line of input provided by the user. <br>
+                            5. We store the user's input in the `userName` variable.<br>
+                            6. We display a greeting message using `System.out.println`.<br>
+                            7. Finally, we close the `Scanner` object to release associated resources (though in this simple example, it's not strictly necessary). <br>
+                            <br>
+                            Remember to handle different types of input (integers, doubles, etc.) using appropriate `Scanner` methods (`nextInt()`, `nextDouble()`, etc.) based on your program's requirements.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Do-while loop</summary>
+                        <p>In Java, the `do-while` loop is another type of loop structure that executes a block of code at least once, and then continues to execute as long as a specified condition is true. The syntax for a `do-while` loop is as follows:
+                              <br> <br>       
+                            ```java <br>
+                            do { <br>
+                                // code to be executed in each iteration <br>
+                            } while (condition); <br>
+                            ```
+                            <br><br>
+                            Here's a simple example of a `do-while` loop that prompts the user to enter a positive number:
+                            <br><br>
+                            ```java <br>
+                            import java.util.Scanner; <br>
+                            
+                            public class DoWhileLoopExample { <br>
+                                public static void main(String[] args) { <br>
+                                    // Create a Scanner object to read input<br>
+                                    Scanner scanner = new Scanner(System.in);<br>
+                            
+                                    int userNumber; <br>
+                            
+                                    do { <br>
+                                        // Prompt the user to enter a positive number <br>
+                                        System.out.print("Enter a positive number: "); <br>
+                                        
+                                        // Read the user's input <br>
+                                        userNumber = scanner.nextInt(); <br>
+                            
+                                        // Display an error message if the entered number is not positive <br>
+                                        if (userNumber <= 0) { <br>
+                                            System.out.println("Please enter a positive number."); <br>
+                                        }<br>
+                                    } while (userNumber <= 0); <br>
+                            
+                                    // Display the entered positive number <br>
+                                    System.out.println("You entered: " + userNumber); <br>
+                            
+                                    // Close the Scanner to avoid resource leaks <br>
+                                    scanner.close(); <br>
+                                } <br>                                                     
+                            }
+                            ``` <br><br>
+                            
+                            In this example: <br>
+                            
+                            1. The loop structure begins with the `do` keyword, and the block of code within the curly braces is executed at least once. <br>
+                            2. The `while` keyword is followed by a condition (`userNumber <= 0`). If the condition is true, the loop continues; otherwise, it exits. <br>
+                            3. Inside the loop, the user is prompted to enter a positive number. If the entered number is not positive, an error message is displayed, and the loop continues to prompt until a positive number is entered. <br>
+                            
+                            Use `do-while` loops when you want to ensure that the loop body is executed at least once, regardless of the initial condition.</p>
+                       
+                    </details>
+                    <details>
+                        <summary>switch statement</summary>
+                        <p>In Java, a `switch` statement is used for decision-making based on the value of a variable. It provides a concise way to handle multiple cases without the need for a series of `if-else` statements. Here's the basic syntax of a `switch` statement: <br> <br>
+
+                            ```java <br>
+                            switch (variable) { <br>
+                                case value1: <br>
+                                    // code to be executed if variable equals value1 <br>
+                                    break; <br>
+                                case value2:<br>
+                                    // code to be executed if variable equals value2 <br>
+                                    break; <br>
+                                // more cases can be added as needed <br>
+                                default:<br>
+                                    // code to be executed if none of the cases match<br>
+                            }
+                            ```<br><br>
+                            
+                            Here's a simple example to illustrate the usage of a `switch` statement: <br> <br>
+                            
+                            ```java<br>
+                            public class SwitchExample { <br>
+                                public static void main(String[] args) { <br>
+                                    int dayOfWeek = 3; <br>
+                            
+                                    switch (dayOfWeek) { <br>
+                                        case 1: <br>
+                                            System.out.println("Monday"); <br>
+                                            break; <br>
+                                        case 2: <br>
+                                            System.out.println("Tuesday"); <br>
+                                            break; <br>
+                                        case 3:<br>
+                                            System.out.println("Wednesday"); <br>
+                                            break;<br>
+                                        case 4:<br>
+                                            System.out.println("Thursday"); <br>
+                                            break;<br>
+                                        case 5: <br>
+                                            System.out.println("Friday");<br>
+                                            break;<br>
+                                        case 6:<br>
+                                            System.out.println("Saturday"); <br>
+                                            break;<br>
+                                        case 7:<br>
+                                            System.out.println("Sunday"); <br>
+                                            break;<br>
+                                        default:<br>
+                                            System.out.println("Invalid day of the week"); <br>
+                                    }<br>
+                                }<br>
+                            }
+                            ```<br><br>
+                            
+                            In this example, the `switch` statement checks the value of the `dayOfWeek` variable and executes the corresponding code block for the matching case. If none of the cases match, the code inside the `default` block is executed. The `break` statements are used to exit the `switch` statement after a case is matched.</p>
+                       
+                    </details>
+                    <h1 class="Heading head">Module 3</h1>
+                    <details>
+                        <summary>Arrays in java</summary>
+                        <p>Arrays in Java are used to store multiple values of the same type in a single variable. They provide a convenient way to work with collections of data. Here are some key points and examples regarding arrays in Java:
+                           <br> <br>
+                           1. Declaration and Initialization:<br>
+                            
+                             1D Array:<br><br>
+                             
+                            ```java<br>
+                            // Declaration with size <br>
+                            int[] numbers = new int[5]; <br>
+                            
+                            // Initialization with values<br>
+                            int[] numbers = {1, 2, 3, 4, 5}; <br> 
+                            ```<br><br>
+                       
+                         2D Array: <br> <br>
+                           
+                            ```java <br>
+                            // Declaration and initialization<br>
+                            int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; <br>
+                            ```
+                           <br><br>
+                         2. Accessing Array Elements: <br> <br>
+                           
+                            ```java <br>
+                            int[] numbers = {1, 2, 3, 4, 5}; <br>
+                            
+                            // Accessing elements by index <br>
+                            int firstElement = numbers[0]; // 1 <br>
+                            int thirdElement = numbers[2]; // 3 <br>
+                            ```
+                          <br><br>
+                         3. Array Length: <br> <br>
+                            
+                            ```java <br>
+                            int[] numbers = {1, 2, 3, 4, 5};<br>
+                            int length = numbers.length; // 5 <br>
+                            ```
+                         <br><br>
+                         4. Iterating Through an Array: <br>
+                            
+                         For Loop: <br> <br>
+                         
+                            ```java <br>
+                            for (int i = 0; i < numbers.length; i++) { <br>
+                                System.out.println(numbers[i]); <br>
+                            } <br>
+                            ```
+                       <br><br>
+                         Enhanced For Loop (foreach loop): <br> <br>
+                            
+                            ```java<br>
+                            for (int number : numbers) { <br>
+                                System.out.println(number); <br>
+                            } <br>
+                            ```
+                         <br><br>
+                        5. Multi-dimensional Arrays: <br>
+                            
+                         Declaration and Initialization: <br> <br>
+                            
+                            ```java <br>
+                            int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; <br>
+                            ```
+                         <br><br>
+                         Accessing Elements: <br> <br>
+                           
+                            ```java<br>
+                            int value = matrix[1][2]; // Accessing the element at row 1, column 2 (value 6) <br>
+                            ```
+                         <br><br>
+                        6. Arrays are Zero-Based: <br>
+                            
+                            In Java, array indices start from 0. For example, in an array `arr`, the first element is accessed using `arr[0]`. <br> <br>
+                            
+                         7. Arrays are Fixed in Size: <br>
+                            
+                            Once an array is created, its size is fixed and cannot be changed. If dynamic resizing is needed, consider using other data structures like `ArrayList`. <br> <br>
+                             
+                            ```java<br>
+                            // Example of using ArrayList<br>
+                            import java.util.ArrayList;<br>
+                       
+                            ArrayList<Integer> list = new ArrayList<>(); <br>
+                            list.add(1);<br>
+                            list.add(2); <br>
+                            ```
+                           <br><br>
+                            Arrays are an essential part of Java programming, providing a versatile way to organize and manipulate data.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>String Array</summary>
+                        <p>In Java, a string array is an array that holds elements of the `String` type. Here's a basic overview of working with string arrays: <br>
+
+                         Declaration and Initialization: <br>
+                            
+                         1. Declaration with Size: <br> <br>
+                            ```java  <br>
+                            // Declare a string array with a specified size  <br>
+                            String[] names = new String[3];  <br>
+                            ```
+                            <br> <br>
+                         2. Initialization with Values:  <br><br>
+                            ```java <br>
+                            // Declare and initialize a string array  <br>
+                            String[] daysOfWeek = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};  <br>
+                            ```
+                            <br> <br> 
+                        Accessing Array Elements: <br> <br>
+                            
+                            ```java  <br>
+                            String[] daysOfWeek = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};  <br>
+                            
+                            // Accessing elements by index  <br>
+                            String firstDay = daysOfWeek[0]; // "Monday"  <br>
+                            String thirdDay = daysOfWeek[2]; // "Wednesday"  <br>
+                            ```
+                            <br> <br>
+                        Array Length:  <br>
+                        <br>
+                            ```java  <br>
+                            String[] daysOfWeek = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};  <br>
+                            int length = daysOfWeek.length; // 7  <br>
+                            ```
+                            <br> <br>
+                         Iterating Through a String Array:  <br>
+                            
+                        For Loop:  <br> <br>
+                            ```java  <br>
+                            for (int i = 0; i < daysOfWeek.length; i++) {  <br>
+                                System.out.println(daysOfWeek[i]);  <br>
+                            } <br>
+                            ```
+                            <br> <br>
+                         Enhanced For Loop (foreach loop):  <br> <br>
+                            ```java <br>
+                            for (String day : daysOfWeek) {  <br>
+                                System.out.println(day); <br>
+                            } <br>                            
+
+                            ```<br><br>
+                          Multi-dimensional String Array: <br>
+                            
+                         Declaration and Initialization: <br><br>
+                            ```java <br>
+                            // Declare and initialize a 2D string array <br>
+                            String[][] matrix = {{"A", "B", "C"}, {"D", "E", "F"}, {"G", "H", "I"}}; <br>
+                            ```
+                            <br><br>
+                         Accessing Elements: <br><br>
+                            ```java<br>
+                            String value = matrix[1][2]; // Accessing the element at row 1, column 2 (value "F") <br>
+                            ```
+                            <br><br>
+                            String arrays are widely used to store and manipulate collections of strings, making them a fundamental part of Java programming. They provide flexibility for handling textual data in various scenarios.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Multi-dimensional array</summary>
+                        <p>In Java, a multi-dimensional array is an array of arrays. It allows you to store data in a table-like structure with multiple rows and columns. The most common type is a 2D array, but you can have higher-dimensional arrays as well. Here's an overview of multi-dimensional arrays in Java: <br><br>
+
+                        1. Declaration and Initialization: <br>
+                            
+                        2D Array:<br><br>
+                            ```java<br>
+                            // Declaration and initialization of a 2D array <br>
+                            int[][] matrix = { <br>
+                                {1, 2, 3}, <br>
+                                {4, 5, 6}, <br>
+                                {7, 8, 9}<br>
+                            };<br>
+                            ```
+                            <br><br>
+                         3D Array: <br><br>
+                            ```java <br>
+                            // Declaration and initialization of a 3D array <br>
+                            int[][][] threeDMatrix = { <br>
+                                { <br>
+                                    {1, 2, 3}, <br>
+                                    {4, 5, 6}<br>
+                                },<br>
+                                {<br>
+                                    {7, 8, 9}, <br>
+                                    {10, 11, 12} <br>
+                                }<br>
+                            };<br>
+                            ```
+                            <br><br>
+                         2. Accessing Elements: <br><br>
+                            
+                         2D Array:<br><br>
+                            ```java<br>
+                            int value = matrix[1][2]; // Accessing the element at row 1, column 2 (value 6) <br>
+                            ```
+                            <br><br>
+                        3D Array:<br><br>
+                            ```java<br>
+                            int value = threeDMatrix[1][0][2]; // Accessing the element at depth 1, row 0, column 2 (value 9) <br>
+                            ```
+                            <br><br>
+                         3. Array Length:<br>
+                            
+                         2D Array:<br><br>
+                            ```java<br>
+                            int rows = matrix.length;    // Number of rows (3) <br>
+                            int columns = matrix[0].length; // Number of columns in the first row (3) <br>
+                            ```
+                            <br><br>
+                         3D Array: <br><br>
+                            ```java <br>
+                            int depth = threeDMatrix.length;    // Number of depths (2) <br>
+                            int rows = threeDMatrix[0].length;  // Number of rows in the first depth (2) <br>
+                            int columns = threeDMatrix[0][0].length; // Number of columns in the first depth and first row (3) <br>
+                            ```
+                            <br><br>
+                         4. Iterating Through a Multi-dimensional Array:<br>
+                            
+                          2D Array:<br><br>
+                            ```java <br>
+                            for (int i = 0; i < matrix.length; i++) { <br>
+                                for (int j = 0; j < matrix[i].length; j++) { <br>
+                                    System.out.print(matrix[i][j] + " "); <br>
+                                } <br>
+                                System.out.println(); <br>
+                            }<br>
+                            ```
+                            <br><br>
+                         3D Array:<br><br>
+                            ```java<br>
+                            for (int i = 0; i < threeDMatrix.length; i++) { <br>
+                                for (int j = 0; j < threeDMatrix[i].length; j++) {  <br>
+                                    for (int k = 0; k < threeDMatrix[i][j].length; k++) { <br>
+                                        System.out.print(threeDMatrix[i][j][k] + " "); <br>
+                                    } <br>
+                                    System.out.println(); <br>
+                                } <br>
+                                System.out.println(); <br>
+                            } <br>
+                            ```
+                            <br><br>
+                            Multi-dimensional arrays in Java are useful when you need to represent data in a more structured way, such as matrices or three-dimensional grids.</p>
+                        
+                    </details>
+                    <h1 class="Heading head">Module 4</h1>
+                    <details>
+                        <summary>Key java functions</summary>
+                        <p>Java provides a wide range of functions and methods in its standard libraries (APIs) that cover various aspects of programming. Here are some key functions and methods categorized by their common use cases:
+                           <br><br>
+                         Input/Output:
+                         <br>
+                            1. Reading Input:<br>
+                                ```java <br>
+                                Scanner scanner = new Scanner(System.in); <br>
+                                int number = scanner.nextInt(); <br>
+                                ```
+                                <br><br>
+                            2. Console Output:<br>
+                                ```java<br>
+                                System.out.println("Hello, World!"); <br>
+                                ```
+                                <br><br>
+                             Strings:<br><br>
+                            
+                            1. String Concatenation:<br>
+                                ```java<br>
+                                String firstName = "John"; <br>
+                                String lastName = "Doe"; <br> 
+                                String fullName = firstName + " " + lastName; <br>
+                                ```
+                                <br><br>
+                            2. String Length:<br>
+                                ```java<br>
+                                String text = "Hello"; <br>
+                                int length = text.length(); <br>
+                                ```
+                                <br><br>
+                            3. Substring:<br>
+                                ```java <br>
+                                String text = "Hello, World!"; <br>
+                                String substring = text.substring(7); <br>
+                                ```
+                                <br><br>
+                            Math:<br><br>
+                            
+                            1. Math Operations:<br>
+                                ```java <br>
+                                int sum = Math.addExact(5, 3); <br>
+                                double sqrt = Math.sqrt(25.0); <br>
+                                ```
+                                <br><br>
+                             Arrays: <br><br>
+                            
+                            1. Sorting Arrays:<br>
+                                ```java<br>
+                                int[] numbers = {5, 2, 8, 1, 3};<br>
+                                Arrays.sort(numbers);<br>
+                                ```
+                                <br><br>
+                            2. Copying Arrays: <br>
+                                ```java <br>
+                                int[] source = {1, 2, 3}; <br>
+                                int[] destination = Arrays.copyOf(source, source.length); <br>
+                                ```
+                                <br><br>
+                           Collections (List, Set, Map):<br><br>
+                            
+                            1. List:<br>
+                                ```java <br>
+                                List<String> names = new ArrayList<>(); <br>
+                                names.add("Alice");<br>
+                                names.add("Bob");<br>
+                                ```
+                                <br><br>
+                            2. Set: <br>
+                                ```java<br>
+                                Set<Integer> numbers = new HashSet<>(); <br>
+                                numbers.add(1);<br>
+                                numbers.add(2);<br>
+                                ```
+                                <br><br>
+                            3. Map:<br>
+                                ```java <br>
+                                Map<String, Integer> ageMap = new HashMap<>(); <br>
+                                ageMap.put("Alice", 25);<br>
+                                ageMap.put("Bob", 30);<br>
+                                ```
+                                <br><br>
+                           File I/O: <br><br>
+                            
+                            1. Reading from a File:<br>
+                                ```java<br>
+                                try (BufferedReader reader = new BufferedReader(new FileReader("filename.txt"))) { <br>
+                                    String line = reader.readLine();<br>
+                                } catch (IOException e) {<br>
+                                    e.printStackTrace();<br>
+                                }<br>
+                                ```<br><br>
+                            
+                            2. Writing to a File:<br>
+                                ```java<br>
+                                try (BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt"))) {<br>
+                                    writer.write("Hello, File!");<br>
+                                } catch (IOException e) {<br>
+                                    e.printStackTrace();<br>
+                                }<br>
+                                ```
+                                <br><br>
+                            These are just a few examples, and Java has a rich set of functions and libraries for various tasks. The specific functions you use will depend on your application's requirements. The Java documentation is a valuable resource for exploring the full range of available functions: [Java SE Documentation](https://docs.oracle.com/en/java/javase/).</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Classes and objects</summary>
+                        <p>In Java, classes and objects are fundamental concepts of object-oriented programming (OOP). Here's an overview of what they are and how they're used: <br><br>
+
+                             Classes:<br>
+                            - A class in Java is a blueprint or template for creating objects.<br>
+                            - It defines the properties (fields/attributes) and behaviors (methods) that objects of that type will have.<br>
+                            - Classes in Java are declared using the `class` keyword, followed by the class name.<br>
+                            - Here's a basic example of a class in Java:<br><br>
+                            
+                            ```java<br>
+                            public class Car {<br>
+                                // Fields or attributes<br>
+                                String make;<br>
+                                String model;<br>
+                                int year;<br>
+                            
+                                // Constructor<br>
+                                public Car(String make, String model, int year) {<br>
+                                    this.make = make;<br>
+                                    this.model = model;<br>
+                                    this.year = year;<br>
+                                }<br>
+                            
+                                // Method<br>
+                                public void drive() {<br>
+                                    System.out.println("Driving the " + year + " " + make + " " + model);<br>
+                                }<br>
+                            }<br>
+                            ```
+                            <br><br>
+                            Objects:<br>
+                            - An object is an instance of a class.<br>
+                            - It is created using the `new` keyword followed by the class name and any necessary arguments to the constructor.<br>
+                            - Each object has its own set of instance variables, which are independent of other objects created from the same class.<br>
+                            - Here's how you can create objects of the `Car` class:<br><br>
+                            
+                            ```java<br>
+                            public class Main {<br>
+                                public static void main(String[] args) {<br>
+                                    // Creating objects<br>
+                                    Car myCar = new Car("Toyota", "Corolla", 2020);<br>
+                                    Car anotherCar = new Car("Honda", "Civic", 2018);<br>
+                            
+                                    // Accessing methods<br>
+                                    myCar.drive();<br>
+                                    anotherCar.drive();<br>
+                                }<br>
+                            }<br>
+                            ```
+                            <br><br>
+                            In this example, `myCar` and `anotherCar` are two separate objects of the `Car` class, each with its own set of attributes (`make`, `model`, `year`). They can independently invoke methods defined in the `Car` class, such as `drive()`.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Methods in java</summary>
+                        <p>In Java, methods are blocks of code that perform specific tasks and are defined within a class. They encapsulate behavior and allow you to perform operations on objects or manipulate data. Here's an overview of methods in Java: <br><br>
+
+                           Method Signature: <br>
+                            - A method signature consists of the method's name and its parameter list. It defines the method's interface. <br>
+                            - Method signatures do not include the return type of the method. <br>
+                            - If a method does not return any value, its return type is `void`. <br> <br>
+                            
+                            Method Declaration: <br>
+                            - Methods are declared within a class using the following syntax: <br> <br>
+                              
+                              ```java <br>
+                              accessModifier returnType methodName(parameterList) { <br>
+                                  // Method body <br>
+                              } <br>
+                              ```
+                              <br> <br>
+                            - `accessModifier`: Specifies the visibility of the method (e.g., `public`, `private`, `protected`, or package-private). <br>
+                            - `returnType`: Specifies the type of value returned by the method. Use `void` if the method does not return anything. <br>
+                            - `methodName`: The name of the method. <br>
+                            - `parameterList`: The list of parameters that the method accepts. It can be empty if the method takes no parameters.
+                            <br> <br>
+                           Method Example: <br>
+                            Here's an example of a method within a class: <br> <br>
+                            
+                            ```java <br>
+                            public class Calculator { <br>
+                                // Method to add two numbers <br>
+                                public int add(int a, int b) { <br>
+                                    return a + b; <br>
+                                } <br>
+                            
+                                // Method to multiply two numbers <br>
+                                public int multiply(int x, int y) { <br>
+                                    return x * y; <br>
+                                } <br>
+                            
+                                // Method with no return value <br>
+                                public void greet(String name) { <br>
+                                    System.out.println("Hello, " + name + "!"); <br>
+                                } <br>
+                            
+                                // Main method <br>
+                                public static void main(String[] args) { <br>
+                                    Calculator calc = new Calculator(); <br>
+                                    int sum = calc.add(5, 3); <br>
+                                    System.out.println("Sum: " + sum); <br>
+                            
+                                    int product = calc.multiply(4, 6); <br>
+                                    System.out.println("Product: " + product); <br>
+                            
+                                    calc.greet("John"); <br>
+                                } <br>
+                            } <br>
+                            ```
+                            <br> <br>
+                            In this example: <br>
+                            - `add` and `multiply` are methods that take two parameters and return an `int`. <br>
+                            - `greet` is a method that takes a `String` parameter and returns `void`. <br>
+                            - Inside the `main` method, we create an instance of the `Calculator` class and call its methods with different arguments.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Get returns method</summary>
+                         <p>In Java, methods can return values of various types. Here's how you define and use methods that return values: <br><br>
+
+                          Method with Return Value:<br>
+                            - To define a method that returns a value, you need to specify the return type in the method signature.<br>
+                            - Inside the method body, you use the `return` keyword followed by the value to be returned.<br>
+                            - If the method has a return type other than `void`, it must return a value of that type.<br>
+                            
+                            Example:<br><br>
+                            
+                            ```java<br>
+                            public class MathOperations {<br>
+                                // Method to add two numbers and return the result<br>
+                                public int add(int a, int b) {<br>
+                                    return a + b;<br>
+                                }<br>
+                            
+                                // Method to subtract two numbers and return the result<br>
+                                public double subtract(double x, double y) {<br>
+                                    return x - y;<br>
+                                }<br>
+                            
+                                // Method to check if a number is even and return true if it is, false otherwise<br>
+                                public boolean isEven(int num) {<br>
+                                    return num % 2 == 0;<br>
+                                }<br>
+                            
+                                // Main method<br>
+                                public static void main(String[] args) {<br>
+                                    MathOperations math = new MathOperations();<br>
+                            
+                                    int sum = math.add(5, 3);<br>
+                                    System.out.println("Sum: " + sum);<br>
+                            
+                                    double difference = math.subtract(7.5, 3.2);<br>
+                                    System.out.println("Difference: " + difference);<br>
+                            
+                                    int number = 10;<br>
+                                    boolean result = math.isEven(number);<br>
+                                    System.out.println(number + " is even: " + result);<br>
+                                }<br>
+                            }<br>
+                            ```
+                            <br><br>
+                            In this example:<br>
+                            - The `add` method returns an `int`.<br>
+                            - The `subtract` method returns a `double`.<br>
+                            - The `isEven` method returns a `boolean`.<br>
+                            - Inside the `main` method, we call each method and use the returned values accordingly.<br><br>
+                            
+                            Remember:<br>
+                            - The return type specified in the method signature should match the type of value returned by the `return` statement in the method body.<br>
+                            - If a method has a return type, it must return a value of that type in all execution paths.</p>
+                      
+                    </details>
+                    <details>
+                        <summary>Getters and setters</summary>
+                        <p>In Java, getters and setters are methods used to access and modify the private fields (member variables) of a class. They are often used to implement encapsulation, which helps in controlling access to the class's attributes. Here's how you define and use getters and setters: <br>
+
+                         Getters: 
+                            - Getters are methods used to retrieve the values of private fields.
+                            - Getters typically follow a naming convention where the method name starts with "get" followed by the name of the field being accessed.
+                            - Getters do not modify the state of the object.
+                            - Getters are often used to provide read-only access to private fields.
+                            
+                            ### Setters:
+                            - Setters are methods used to modify the values of private fields.
+                            - Setters typically follow a naming convention where the method name starts with "set" followed by the name of the field being modified.
+                            - Setters allow controlled modification of the object's state.
+                            - Setters are often used to provide write-only or read-write access to private fields.
+                            
+                            ### Example:
+                            
+                            ```java
+                            public class Person {
+                                private String name;
+                                private int age;
+                            
+                                // Getter for name
+                                public String getName() {
+                                    return name;
+                                }
+                            
+                                // Setter for name
+                                public void setName(String name) {
+                                    this.name = name;
+                                }
+                            
+                                // Getter for age
+                                public int getAge() {
+                                    return age;
+                                }
+                            
+                                // Setter for age
+                                public void setAge(int age) {
+                                    if (age >= 0) {
+                                        this.age = age;
+                                    } else {
+                                        System.out.println("Invalid age");
+                                    }
+                                }
+                            
+                                // Main method
+                                public static void main(String[] args) {
+                                    Person person = new Person();
+                            
+                                    // Using setters to modify private fields
+                                    person.setName("John");
+                                    person.setAge(30);
+                            
+                                    // Using getters to retrieve private field values
+                                    System.out.println("Name: " + person.getName());
+                                    System.out.println("Age: " + person.getAge());
+                                }
+                            }
+                            ```
+                            
+                            In this example:
+                            - The `Person` class has private fields `name` and `age`.
+                            - Getters (`getName`, `getAge`) are used to retrieve the values of these private fields.
+                            - Setters (`setName`, `setAge`) are used to modify the values of these private fields.
+                            - The `setAge` method demonstrates how setters can perform validation before modifying the field.
+                            
+                            Using getters and setters provides a level of abstraction and encapsulation, allowing the internal state of objects to be accessed and modified in a controlled manner.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Using Constructors</summary>
+                        <p>In Java, a constructor is a special type of method that is automatically called when an instance of a class is created. Constructors are used to initialize the newly created object. They have the same name as the class and do not have a return type, not even void.
+                            <br>
+                            Here's a basic example of a constructor in Java: <br> <br>
+                            
+                            ```java <br>
+                            public class MyClass {<br>
+                                private int myNumber;<br>
+                            
+                                // Constructor<br>
+                                public MyClass() {<br>
+                                    // Initialization code<br>
+                                    myNumber = 0;<br>
+                                }<br>
+                            
+                                // Another constructor with parameters<br>
+                                public MyClass(int number) {<br>
+                                    // Initialization code<br>
+                                    myNumber = number;<br>
+                                }<br>
+                            
+                                public int getMyNumber() {<br>
+                                    return myNumber;<br>
+                                }<br>
+                            
+                                public static void main(String[] args) {<br>
+                                    // Creating an object of MyClass<br>
+                                    MyClass obj1 = new MyClass();<br>
+                                    MyClass obj2 = new MyClass(10);<br>
+                            
+                                    System.out.println("obj1.myNumber: " + obj1.getMyNumber()); // Output: 0<br>
+                                    System.out.println("obj2.myNumber: " + obj2.getMyNumber()); // Output: 10<br>
+                                }<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            In the above example:<br><br>
+                            
+                            - `MyClass` is the name of the class.<br>
+                            - `MyClass()` is a constructor without parameters. It initializes the `myNumber` variable to 0.<br>
+                            - `MyClass(int number)` is another constructor that takes an integer parameter and initializes `myNumber` to the value passed as the parameter.<br>
+                            - `getMyNumber()` is a method that returns the value of the `myNumber` variable.<br>
+                            - In the `main` method, we create two objects of `MyClass` using both constructors.<br><br>
+                            
+                            Constructors can also be overloaded, meaning you can have multiple constructors with different parameter lists within the same class. This allows you to create objects in different ways depending on the initialization requirements.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Static and final keywords</summary>
+                        <p>In Java, the `static` and `final` keywords are used to modify the behavior of variables, methods, and classes. <br><br>
+
+                            1. Static Keyword: <br>
+                            
+                               - When applied to a variable: Declares that the variable belongs to the class itself, not to instances of the class. There will be only one copy of the variable shared by all instances of the class. <br>
+                               
+                               - When applied to a method: Declares that the method belongs to the class rather than to instances of the class. Static methods can be called without creating an instance of the class. <br>
+                               
+                               - When applied to a block of code: Declares a static block, which is executed only once when the class is loaded into memory. <br> <br>
+                            
+                               Example: <br>
+                               ```java <br>
+                               public class MyClass { <br>
+                                   static int staticVariable = 10; <br>
+                                   int instanceVariable = 20; <br>
+                            
+                                   static void staticMethod() { <br>
+                                       System.out.println("Static method"); <br>
+                                   } <br>
+                            
+                                   void instanceMethod() { <br>
+                                       System.out.println("Instance method"); <br>
+                                   } <br>
+                            
+                                   static { <br>
+                                       System.out.println("Static block"); <br>
+                                   } <br>
+                            
+                                   public static void main(String[] args) { <br>
+                                       System.out.println(MyClass.staticVariable); // Output: 10 <br>
+                                       MyClass.staticMethod(); // Output: Static method <br>
+                            
+                                       // MyClass.instanceVariable; <br> // This will give a compilation error because instanceVariable is not static <br>
+                                       // instanceMethod(); <br> // This will give a compilation error because instanceMethod is not static <br>
+                                   } <br>
+                               } <br>
+                               ``` <br> <br>
+                            
+                            2. Final Keyword: <br>
+                            
+                               - When applied to a variable: Indicates that the variable's value cannot be changed once initialized (i.e., it becomes a constant). <br>
+                               
+                               - When applied to a method: Indicates that the method cannot be overridden by subclasses. <br>
+                               
+                               - When applied to a class: Indicates that the class cannot be subclassed. <br> <br>
+                            
+                               Example: <br>
+                               ```java <br>
+                               public class MyClass { <br>
+                                   final int constantValue = 100; <br>
+                            
+                                   final void finalMethod() { <br>
+                                       System.out.println("Final method"); <br>
+                                   } <br>
+                            
+                                   public static void main(String[] args) { <br>
+                                       // constantValue = 200; <br> // This will give a compilation error because constantValue is final <br>
+                                   } <br>
+                               } <br>
+                               ``` <br> <br>
+                            
+                            Using `static` and `final` together, you can create constants that belong to the class itself and cannot be changed. For example: <br> <br>
+                            ```java <br>
+                            public class Constants { <br>
+                                public static final double PI = 3.14159; <br>
+                                public static final int MAX_VALUE = 100; <br>
+                            } <br>
+                            ``` <br> <br>
+                            
+                            In summary, `static` indicates a member is associated with the class rather than instances, and `final` indicates immutability or non-override-ability depending on where it's applied.</p>
+                        
+                    </details>
+                    <h1 class="Heading head">Module 5</h1>
+                    <details>
+                        <summary>Assignment 1</summary>
+                        <p>1. Basic Calculator: Create a Java program that implements a basic calculator supporting addition, subtraction, multiplication, and division operations. </p>
+                        <p>2. Palindrome Checker: Write a Java program to check if a given string is a palindrome or not.</p>
+                    </details>
+                    <details>
+                        <summary>Assignment 2</summary>
+                        <p>1. Student Management System: Develop a simple student management system where you can add, delete, update, and display student records. Use classes and objects to represent students.</p>
+                        <p>2. Library Management System: Build a library management system that allows users to add books, issue books to students, return books, and view available books.</p>
+                    </details>
+                    <details>
+                        <summary>Assignment 3</summary>
+                        <p>1. Bank Account System: Design a bank account system with classes representing different account types (savings, checking, etc.). Implement functionalities like deposit, withdrawal, and balance inquiry.</p>
+                        <p>2. Contact Management Application: Create a contact management application that allows users to add contacts, search for contacts by name, update contact information, and delete contacts.</p>
+                    </details>
+                    <h1 class="Heading head">Module 6</h1>
+                    <details>
+                        <summary>String builder</summary>
+                        <p>In Java, `StringBuilder` is a class provided by the Java API in the `java.lang` package for creating mutable sequences of characters. It is similar to the `StringBuffer` class but is not synchronized, making it more efficient in single-threaded scenarios where synchronization is not <br><br>
+
+                            `StringBuilder` provides methods to append, insert, delete, and modify characters in the sequence. Since it is mutable, it can be modified without creating a new object each time, making it more efficient for situations where frequent modifications are required. <br> <br>
+                            
+                            Here's a basic example demonstrating the usage of `StringBuilder`: <br> <br>
+                            
+                            ```java <br>
+                            public class StringBuilderExample { <br>
+                                public static void main(String[] args) { <br>
+                                    StringBuilder sb = new StringBuilder(); <br>
+                            
+                                    // Appending strings  <br>
+                                    sb.append("Hello"); <br>
+                                    sb.append(" "); <br>
+                                    sb.append("World"); <br>
+                            
+                                    // Inserting string at a specific position <br>
+                                    sb.insert(5, ", "); <br>
+                            
+                                    // Deleting characters <br>
+                                    sb.delete(5, 7); // Deletes ", " <br>
+                            
+                                    // Replacing characters <br>
+                                    sb.replace(6, 11, "Java"); // Replaces "World" with "Java" <br>
+                            
+                                    // Converting to String <br>
+                                    String result = sb.toString(); <br>
+                            
+                                    System.out.println(result); // Output: Hello Java <br>
+                                } <br>
+                            } <br>
+                            ``` <br> <br>
+                            
+                            In the example above: <br>
+                            
+                            - We create a `StringBuilder` object `sb`. <br>
+                            - We append strings "Hello" and "World" to the `StringBuilder`. <br>
+                            - We insert ", " at index 5 to get "Hello, World". <br>
+                            - We delete ", " at index 5 to get "Hello World". <br>
+                            - We replace "World" with "Java" to get "Hello Java". <br>
+                            - Finally, we convert the `StringBuilder` to a `String` using the `toString()` method. <br> <br>
+                            
+                            `StringBuilder` is especially useful when you need to perform a series of modifications on a string without creating multiple intermediate string objects. However, it's important to note that `StringBuilder` is not thread-safe, so if you're working in a multi-threaded environment, you may want to use `StringBuffer` instead, which is the synchronized counterpart of `StringBuilder`.</p>
+                    </details>
+                    <details>
+                        <summary>ToString Method</summary>
+                        <p>In Java, the `toString()` method is a built-in method that belongs to the `Object` class, which is the root class for all classes in Java. This method returns a string representation of the object. <br> <br>
+
+                            By default, when you call `toString()` on an object, it returns a string that consists of the class name, an "@" symbol, and the object's hashcode in hexadecimal format. However, you can override this method in your own classes to provide a more meaningful string representation. <br> <br>
+                            
+                            Here's an example of how to override the `toString()` method in a custom class: <br> <br>
+                            
+                            ```java <br>
+                            public class MyClass { <br>
+                                private int id; <br>
+                                private String name; <br>
+                            
+                                public MyClass(int id, String name) { <br>
+                                    this.id = id; <br>
+                                    this.name = name; <br>
+                                } <br>
+                            
+                                // Override toString() method <br>
+                                @Override <br>
+                                public String toString() { <br>
+                                    return "MyClass{id=" + id + ", name='" + name + "'}"; <br>
+                                } <br>
+                            
+                                public static void main(String[] args) { <br>
+                                    MyClass obj = new MyClass(1, "John"); <br>
+                                    System.out.println(obj.toString()); // Output: MyClass{id=1, name='John'} <br>
+                                } <br>
+                            } <br>
+                            ``` <br> <br>
+                            
+                            In this example:
+                            <br>
+                            - We have a custom class `MyClass` with two private fields `id` and `name`. <br>
+                            - We provide a constructor to initialize these fields. <br>
+                            - We override the `toString()` method to return a string representation of the object, which includes the values of the `id` and `name` fields. <br> <br>
+                            
+                            When you call `toString()` on an object of `MyClass`, it will return a string in the specified format, providing more meaningful information about the object. <br> <br>
+                            
+                            Overriding `toString()` is particularly useful for debugging purposes and for providing meaningful representations of objects when they need to be converted to strings, such as when logging or printing objects to the console.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Inheritance</summary>
+                        <p>Inheritance is a fundamental concept in object-oriented programming (OOP) languages like Java. It allows a class (subclass or derived class) to inherit properties and behavior (methods) from another class (superclass or base class). This promotes code reuse and enables the creation of a hierarchical relationship between classes. <br> <br>
+
+                            In Java, inheritance is achieved using the `extends` keyword. Here's a basic example to illustrate inheritance:<br><br>
+                            
+                            ```java<br>
+                            // Superclass or Base class<br>
+                            class Animal {<br>
+                                void eat() {<br>
+                                    System.out.println("Animal is eating");<br>
+                                }<br>
+                            }<br>
+                            
+                            // Subclass or Derived class<br>
+                            class Dog extends Animal {<br>
+                                void bark() {<br>
+                                    System.out.println("Dog is barking");<br>
+                                }<br>
+                            }<br>
+                            
+                            public class Main {<br>
+                                public static void main(String[] args) {<br>
+                                    Dog dog = new Dog();<br>
+                                    dog.eat(); // Inherited method from Animal class<br>
+                                    dog.bark(); // Method defined in Dog class<br>
+                                }<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            In this example:<br>
+                            
+                            - `Animal` is the superclass with a method `eat()`.<br>
+                            - `Dog` is the subclass that extends `Animal` and adds a new method `bark()`.<br>
+                            - When an instance of `Dog` is created, it inherits the `eat()` method from `Animal`, and it also has its own method `bark()`.<br><br>
+                            
+                            Key points about inheritance in Java:<br><br>
+                            
+                            1. Single Inheritance: Java supports single inheritance, meaning a class can only inherit from one superclass. However, Java supports multiple levels of inheritance, allowing a subclass to become a superclass for another subclass.<br><br>
+                            
+                            2. Access Modifiers: Inherited members can have different access modifiers:<br>
+                               - If the superclass member is `public` or `protected`, it's accessible to the subclass.<br>
+                               - If the superclass member has default access (no modifier), it's accessible to subclasses within the same package.<br>
+                               - If the superclass member is `private`, it's not directly accessible in the subclass.<br><br>
+                            
+                            3. Constructor Inheritance: Constructors are not inherited by subclasses, but the subclass constructor implicitly invokes a superclass constructor either implicitly (using `super()`) or explicitly (using `super(parameters)`).<br><br>
+                            
+                            4. Method Overriding: Subclasses can override methods of the superclass to provide their own implementation. This allows for polymorphic behavior, where the method invoked depends on the actual type of the object.<br><br>
+                            
+                            5. Super Keyword: The `super` keyword in Java is used to refer to the superclass from within the subclass. It can be used to access superclass members, call superclass constructors, and differentiate overridden methods from superclass methods.<br><br>
+                            
+                            Inheritance is a powerful mechanism in Java that enables code reuse, promotes modularity, and facilitates the creation of complex software systems through class hierarchies.</p>
+                       
+                    </details>
+                    <details>
+                        <summary>Java Packages</summary>
+                        <p>In Java, packages are used to organize classes and interfaces into namespaces, providing a way to logically group related classes and interfaces. This helps in avoiding naming conflicts and makes it easier to manage and maintain code. Packages also support access control by defining the visibility of classes, interfaces, constructors, and other members. <br><br>
+
+                            Here's an overview of how packages work in Java:<br><br>
+                            
+                            1. Package Declaration:<br>
+                               - At the beginning of a Java source file, you can declare the package to which the class or interface belongs using the `package` keyword followed by the package name.<br>
+                               - Package declaration must be the first statement in the source file (before any import statements or class/interface declarations).<br>
+                               - For example:<br><br>
+                                 ```java<br>
+                                 package com.example.myproject;<br>
+                                 ```<br><br>
+                            
+                            2. Package Structure:<br>
+                               - Packages are hierarchical, meaning you can have sub-packages within packages.<br>
+                               - Package names are separated by periods (`.`), similar to directory paths in a file system.<br>
+                               - For example:<br><br>
+                                 ```<br>
+                                 com<br>
+                                 └── example<br>
+                                     └── myproject<br>
+                                 ```<br><br>
+                            
+                            3. Package Import:<br>
+                               - To use classes or interfaces from another package in your code, you need to import them using the `import` statement.<br>
+                               - You can import specific classes/interfaces or the entire package.<br>
+                               - For example:<br><br>
+                                 ```java<br>
+                                 import com.example.otherpackage.OtherClass;<br>
+                                 ```<br><br>
+                            
+                            4. Default Package:<br>
+                               - If no package is specified at the beginning of a Java source file, the class or interface is placed in the default package.<br>
+                               - It's generally recommended to avoid using the default package to prevent naming conflicts.<br><br>
+                            
+                            5. Standard Java Packages:<br>
+                               - Java provides a set of standard packages (e.g., `java.lang`, `java.util`, `java.io`) containing commonly used classes and interfaces.<br>
+                               - These packages are automatically available to all Java programs without needing to import them explicitly.<br><br>
+                            
+                            6. Creating and Using Packages:<br>
+                               - To create your own package, you organize your source files into directories corresponding to the package structure, and then include a package declaration at the beginning of each file.<br>
+                               - When compiling Java source files, you need to specify the directory structure using the `-d` option to maintain the package hierarchy in the output directory.<br><br>
+                            
+                            Example of a directory structure for a package `com.example.myproject`:<br><br>
+                            
+                            ```<br>
+                            myproject<br>
+                            └── src<br>
+                                └── com<br>
+                                    └── example<br>
+                                        └── myproject<br>
+                                            ├── MyClass.java<br>
+                                            └── AnotherClass.java<br>
+                            ```<br><br>
+                            
+                            Content of `MyClass.java`:<br><br>
+                            ```java<br>
+                            package com.example.myproject;<br>
+                            
+                            public class MyClass {<br>
+                                // Class implementation<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            Content of `AnotherClass.java`:<br><br>
+                            ```java<br>
+                            package com.example.myproject;<br>
+                            
+                            public class AnotherClass {<br>
+                                // Class implementation<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            When compiling the files, you maintain the package structure:<br><br>
+                            
+                            ```<br>
+                            javac -d bin src/com/example/myproject/MyClass.java src/com/example/myproject/AnotherClass.java<br>
+                            ```<br><br>
+                            
+                            This will create `.class` files inside the `bin` directory, mirroring the package structure.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Java Interfaces</summary>
+                        <p>In Java, an interface is a reference type that defines a set of abstract methods (methods without a body) that must be implemented by any class that implements the interface. Interfaces provide a way to achieve abstraction and multiple inheritance-like behavior in <br><br>
+
+                            Here are some key points about interfaces in Java:<br><br>
+                            
+                            1. Syntax:<br>
+                               - To declare an interface, you use the `interface` keyword followed by the interface name.<br>
+                               - Interface methods are declared without a body.<br>
+                               - Classes implement interfaces using the `implements` keyword.<br>
+                               - Example:<br><br>
+                                 ```java<br>
+                                 interface Printable {<br>
+                                     void print();<br>
+                                 }<br>
+                            
+                                 class MyClass implements Printable {<br>
+                                     public void print() {<br>
+                                         System.out.println("Printing...");<br>
+                                     }<br>
+                                 }<br>
+                                 ```<br><br>
+                            
+                            2. Abstract Methods:<br>
+                               - Interfaces can contain abstract methods, which are implicitly `public` and `abstract`.<br>
+                               - All methods in an interface are implicitly `public`.<br>
+                               - Example:<br><br>
+                                 ```java<br>
+                                 interface Printable {<br>
+                                     void print();<br>
+                                 }<br>
+                                 ```<br><br>
+                            
+                            3. Default Methods:<br>
+                               - Java 8 introduced default methods, which allow you to provide a default implementation for interface methods.<br>
+                               - Default methods are declared using the `default` keyword.<br>
+                               - They provide backward compatibility for existing interfaces, allowing new methods to be added without breaking implementing classes.<br>
+                               - Example:<br><br>
+                                 ```java<br>
+                                 interface Printable {<br>
+                                     void print();<br>
+                            
+                                     default void log() {<br>
+                                         System.out.println("Logging...");<br>
+                                     }<br>
+                                 }<br>
+                                 ```<br><br>
+                            
+                            4. Static Methods:<br>
+                               - Java 8 also introduced static methods in interfaces, which can be invoked using the interface name.<br>
+                               - Static methods cannot be overridden in implementing classes.<br>
+                               - Example:<br><br>
+                                 ```java<br>
+                                 interface Printable {<br>
+                                     void print();<br>
+                            
+                                     static void getInfo() {<br>
+                                         System.out.println("This is a printable interface.");<br>
+                                     }<br>
+                                 }<br>
+                                 ```<br><br>
+                            
+                            5. Constant Variables:<br>
+                               - Interfaces can contain constant variables, which are implicitly `public`, `static`, and `final`.<br>
+                               - Example:<br><br>
+                                 ```java<br>
+                                 interface Printable {<br>
+                                     int MAX_PAGES = 100;<br>
+                                 }<br>
+                                 ```<br><br>
+                            
+                            6. Implementing Interfaces:<br>
+                               - Classes implement interfaces using the `implements` keyword.<br>
+                               - A class can implement multiple interfaces.<br>
+                               - Example:<br><br>
+                                 ```java<br>
+                                 class MyClass implements Printable, Serializable {<br>
+                                     // Implementation of interface methods<br>
+                                 }<br>
+                                 ```<br><br>
+                            
+                            7. Interface Inheritance:<br>
+                               - Interfaces can extend one or more other interfaces using the `extends` keyword.<br>
+                               - Example:<br><br>
+                                 ```java<br>
+                                 interface Printable {<br>
+                                     void print();<br>
+                                 }<br>
+                            
+                                 interface Showable extends Printable {<br>
+                                     void show();<br>
+                                 }<br>
+                                 ```<br><br>
+                            
+                            Interfaces play a crucial role in Java programming, especially in achieving abstraction, polymorphism, and code reusability. They are widely used in Java libraries and frameworks to define contracts that classes must adhere to.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Java Modifiers</summary>
+                        <p>In Java, modifiers are keywords that provide additional information about classes, methods, variables, and other elements of a Java program. These modifiers control access, behavior, and other characteristics of the elements they modify. <br><br>
+
+                            Here are some common modifiers used in Java:<br><br>
+                            
+                            1. Access Modifiers:<br>
+                               - Access modifiers control the visibility of classes, variables, methods, and constructors.<br>
+                               - There are four access modifiers in Java:<br>
+                                 - `public`: Accessible from any other class.<br>
+                                 - `protected`: Accessible within the same package and by subclasses (even if they are in different packages).<br>
+                                 - `default` (no modifier): Accessible only within the same package.<br>
+                                 - `private`: Accessible only within the same class.<br>
+                               - Example:<br><br>
+                                 ```java<br>
+                                 public class MyClass {<br>
+                                     private int privateVar;<br>
+                                     protected int protectedVar;<br>
+                                     int defaultVar;<br>
+                                     public int publicVar;<br>
+                                 }<br>
+                                 ```<br><br>
+                            
+                            2. Non-Access Modifiers:<br>
+                               - Non-access modifiers modify the behavior of classes, methods, and variables.<br>
+                               - Some commonly used non-access modifiers include:<br>
+                                 - `static`: Belongs to the class rather than any instance of the class.<br>
+                                 - `final`: Indicates that a class cannot be subclassed, a method cannot be overridden, or a variable cannot be reassigned.<br>
+                                 - `abstract`: Indicates that a class or method does not have complete implementation and must be implemented by subclasses (in the case of classes) or overridden (in the case of methods).<br>
+                                 - `synchronized`: Ensures that only one thread can access a method or block of code at a time, preventing race conditions in multithreaded environments.<br>
+                                 - `volatile`: Indicates that a variable's value may be modified by different threads and should not be cached.<br>
+                                 - `transient`: Indicates that a variable should not be serialized when the object is serialized.<br>
+                               - Example:<br><br>
+                                 ```java<br>
+                                 public abstract class AbstractClass {<br>
+                                     public static final int CONSTANT = 10;<br>
+                                     protected static int count;<br>
+                                     transient int tempVar;<br>
+                                     synchronized void synchronizedMethod() {<br>
+                                         // Method implementation<br>
+                                     }<br>
+                                 }<br>
+                                 ```<br><br>
+                            
+                            3. Method Modifiers:<br>
+                               - Method modifiers control method behavior.<br>
+                               - Common method modifiers include `abstract`, `static`, `final`, `synchronized`, and `native` (for methods implemented in native code).<br>
+                               - Example:<br><br>
+                                 ```java<br>
+                                 public class MyClass {<br>
+                                     public static void staticMethod() {<br>
+                                         // Method implementation<br>
+                                     }<br>
+                                     public final void finalMethod() {<br>
+                                         // Method implementation<br>
+                                     }<br>
+                                     public synchronized void synchronizedMethod() {<br>
+                                         // Method implementation<br>
+                                     }<br>
+                                 }<br>
+                                 ```<br><br>
+                            
+                            Modifiers are essential for controlling access, ensuring encapsulation, and defining the behavior of classes, methods, and variables in Java programs. Understanding how to use them effectively is crucial for writing clear, maintainable, and secure code.</p>
+                        
+                    </details>
+                    <h1 class="Heading head">Module 7</h1>
+                    <details>
+                        <summary>Polymorphism</summary>
+                       <p>Polymorphism in Java is a fundamental concept that allows objects of different classes to be treated as objects of a common superclass. It enables methods to behave differently based on the actual object type at runtime. There are two types of polymorphism in Java: compile-time polymorphism (method overloading) and runtime polymorphism (method overriding). <br><br>
+
+                        1. Compile-time Polymorphism (Method Overloading):<br>
+                           - Method overloading allows a class to have multiple methods with the same name but different parameter lists.<br>
+                           - The compiler determines which method to call based on the number and types of arguments provided.<br>
+                           - Overloading can occur within the same class or between parent and child classes.<br>
+                           - Example:<br><br>
+                             ```java<br>
+                             class OverloadDemo {<br>
+                                 void print(int num) {<br>
+                                     System.out.println("Printing int: " + num);<br>
+                                 }<br>
+                                 void print(double num) {<br>
+                                     System.out.println("Printing double: " + num);<br>
+                                 }<br>
+                                 void print(String str) {<br>
+                                     System.out.println("Printing string: " + str);<br>
+                                 }<br>
+                             }<br>
+                             ```<br><br>
+                        
+                        2. Runtime Polymorphism (Method Overriding):<br>
+                           - Method overriding allows a subclass to provide a specific implementation of a method that is already defined in its superclass.<br>
+                           - The method in the subclass must have the same name, return type, and parameter list as the method in the superclass.<br>
+                           - At runtime, the JVM determines which method to execute based on the actual object type (dynamic binding).<br>
+                           - Example:<br><br>
+                             ```java<br>
+                             class Animal {<br>
+                                 void sound() {<br>
+                                     System.out.println("Animal makes a sound");<br>
+                                 }<br>
+                             }<br>
+                             class Dog extends Animal {<br>
+                                 void sound() {<br>
+                                     System.out.println("Dog barks");<br>
+                                 }<br>
+                             }<br>
+                             ```<br><br>
+                        
+                        3. Dynamic Method Dispatch:<br>
+                           - In Java, method overriding is achieved through dynamic method dispatch.<br>
+                           - The actual method called is determined at runtime based on the type of object referred to by the reference variable, not based on the reference type.<br>
+                           - Example:<br><br>
+                             ```java<br>
+                             Animal animal = new Dog();<br>
+                             animal.sound(); // Output: Dog barks<br>
+                             ```<br><br>
+                        
+                        Polymorphism allows for more flexible and extensible code by enabling objects of different types to be treated uniformly. It promotes code reuse and simplifies code maintenance. By understanding and leveraging polymorphism, you can write more modular and scalable Java programs.</p>
+                      
+                    </details>
+                    <details>
+                        <summary>Encapsulation</summary>
+                        <p>Encapsulation is one of the four fundamental Object-Oriented Programming (OOP) concepts in Java, along with inheritance, polymorphism, and abstraction. It refers to the bundling of data and methods that operate on the data into a single unit, called a class. Encapsulation helps in hiding the internal state of an object and restricting direct access to it from outside the class. Instead, access to the data is provided through public methods, also known as getters and setters. <br><br>
+
+                            Here's how encapsulation works in Java: <br> <br>
+                            
+                            1. Data Hiding: <br>
+                               - Encapsulation hides the internal state (data) of an object from outside interference or misuse. <br>
+                               - Data members (variables) of a class are typically declared as private to restrict direct access from outside the class. <br>
+                               - Example: <br> <br>
+                                 ```java <br>
+                                 public class MyClass { <br>
+                                     private int myNumber; // Encapsulated data <br>
+                            
+                                     public int getMyNumber() { // Getter method <br>
+                                         return myNumber; <br>
+                                     } <br>
+                            
+                                     public void setMyNumber(int number) { // Setter method <br>
+                                         myNumber = number; <br>
+                                     } <br>
+                                 } <br>
+                                 ``` <br> <br>
+                            
+                            2. Access Control: <br>
+                               - Access to the encapsulated data is controlled through public methods (getters and setters). <br>
+                               - These methods can enforce validation rules, access controls, and maintain consistency in the internal state of objects. <br>
+                               - Example: <br> <br> 
+                                 ```java <br>
+                                 public class MyClass { <br>
+                                     private int myNumber; // Encapsulated data <br>
+                            
+                                     public int getMyNumber() { // Getter method <br>
+                                         return myNumber; <br>
+                                     } <br>
+                            
+                                     public void setMyNumber(int number) { // Setter method <br>
+                                         if (number >= 0) { <br>
+                                             myNumber = number; <br>
+                                         } else { <br>
+                                             // Handle invalid input <br>
+                                         } <br>
+                                     } <br>
+                                 } <br>
+                                 ``` <br> <br>
+                            
+                            3. Benefits of Encapsulation: <br>
+                               - Data hiding: Prevents direct access to internal state, reducing the risk of accidental data corruption or inconsistency. <br>
+                               - Improved maintainability: Allows changes to the internal implementation of a class without affecting other parts of the program. <br>
+                               - Easier debugging: Helps in locating and fixing bugs by isolating the impact of changes within a class. <br>
+                               - Code reusability: Encapsulated classes can be reused in different parts of the program without modifications. <br>
+                               - Enhanced security: Protects sensitive data from unauthorized access and manipulation. <br> <br>
+                            
+                            Encapsulation is a key principle of OOP and promotes modular, maintainable, and secure software development. By encapsulating data and providing controlled access to it through public methods, you can create robust and flexible Java programs.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Casting in java</summary>
+                        <p>Casting in Java is the process of converting one data type into another. Java provides two types of casting: implicit casting (widening) and explicit casting (narrowing). <br><br>
+
+                            1. Implicit Casting (Widening):<br>
+                               - Implicit casting occurs when the destination data type can hold a larger range of values than the source data type.<br>
+                               - Java automatically performs implicit casting for compatible data types.<br>
+                               - Example:<br><br>
+                                 ```java<br>
+                                 int intValue = 10;<br>
+                                 double doubleValue = intValue; // Implicit casting from int to double<br>
+                                 ```<br><br>
+                            
+                            2. Explicit Casting (Narrowing):<br>
+                               - Explicit casting is necessary when the destination data type cannot hold as wide a range of values as the source data type.<br>
+                               - Explicit casting is performed by specifying the desired data type in parentheses before the value or variable being cast.<br>
+                               - It's important to note that explicit casting may result in data loss or truncation if the value being cast cannot be accurately represented in the destination data type.<br>
+                               - Example:<br><br>
+                                 ```java<br>
+                                 double doubleValue = 10.5;<br>
+                                 int intValue = (int) doubleValue; // Explicit casting from double to int<br>
+                                 ```<br><br>
+                            
+                            3. Casting Objects:<br>
+                               - In addition to primitive data types, casting can also be applied to objects in Java.<br>
+                               - When casting objects, the relationship between the source and destination types must be either inheritance or implementation.<br>
+                               - Example:<br><br>
+                                 ```java<br>
+                                 class Parent {}<br>
+                                 class Child extends Parent {}<br>
+                            
+                                 Parent parentObj = new Child();<br>
+                                 Child childObj = (Child) parentObj; // Explicit casting from Parent to Child<br>
+                                 ```<br><br>
+                            
+                            4. Checking Cast Compatibility:<br>
+                               - Before performing explicit casting on objects, it's recommended to check if the objects are instances of the target type using the `instanceof` operator to avoid `ClassCastException` at runtime.<br>
+                               - Example:<br><br>
+                                 ```java<br>
+                                 if (parentObj instanceof Child) {<br>
+                                     Child childObj = (Child) parentObj;<br>
+                                 }<br>
+                                 ```<br><br>
+                            
+                            5. Wrapper Classes:<br>
+                               - Similar to primitive data types, you can cast between wrapper classes using implicit or explicit casting.<br>
+                               - Example:<br><br>
+                                 ```java<br>
+                                 Integer intValue = 10;<br>
+                                 Double doubleValue = (double) intValue; // Explicit casting from Integer to Double<br>
+                                 ```<br><br>
+                            
+                            Casting in Java is a powerful mechanism for manipulating data types and working with objects. However, it's essential to understand the limitations and potential risks associated with casting, especially when narrowing data types or working with objects. Incorrect casting can lead to compilation errors or runtime exceptions.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Upcasting and downcasting</summary>
+                        <p>In Java, casting refers to the process of converting a value from one data type to another. Upcasting and downcasting are specific types of casting related to class inheritance and polymorphism. <br><br>
+
+                            1. Upcasting:<br>
+                               - Upcasting is the casting of a subclass reference to a superclass reference.<br>
+                               - It is implicit and does not require an explicit cast operator.<br>
+                               - Upcasting is safe because a subclass object is always a superclass object as well, but with additional features.<br>
+                               - Example:<br><br>
+                                 ```java<br>
+                                 class Animal { }<br>
+                                 class Dog extends Animal { }<br>
+                            
+                                 public class Main {<br>
+                                     public static void main(String[] args) {<br>
+                                         Dog dog = new Dog();<br>
+                                         Animal animal = dog; // Upcasting (implicit)<br>
+                                     }<br>
+                                 }<br>
+                                 ```<br><br>
+                            
+                            2. Downcasting:<br>
+                               - Downcasting is the casting of a superclass reference to a subclass reference.<br>
+                               - It is explicit and requires the use of the cast operator.<br>
+                               - Downcasting can potentially throw a `ClassCastException` at runtime if the actual object being referenced is not an instance of the target subclass.<br>
+                               - Example:<br><br>
+                                 ```java<br>
+                                 class Animal { }<br>
+                                 class Dog extends Animal { }<br>
+                            
+                                 public class Main {<br>
+                                     public static void main(String[] args) {<br>
+                                         Animal animal = new Dog();<br>
+                                         Dog dog = (Dog) animal; // Downcasting (explicit)<br>
+                                     }<br>
+                                 }<br>
+                                 ```<br><br>
+                            
+                            3. Checking for Downcasting Safety:<br>
+                               - To avoid `ClassCastException`, you can use the `instanceof` operator to check if the object being referenced is an instance of the target subclass before performing downcasting.<br>
+                               - Example:<br><br>
+                                 ```java<br>
+                                 class Animal { }<br>
+                                 class Dog extends Animal { }<br>
+                            
+                                 public class Main {<br>
+                                     public static void main(String[] args) {<br>
+                                         Animal animal = new Dog();<br>
+                                         if (animal instanceof Dog) {<br>
+                                             Dog dog = (Dog) animal; // Downcasting (explicit)<br>
+                                         } else {<br>
+                                             // Handle the case where animal is not a Dog<br>
+                                         }<br>
+                                     }<br>
+                                 }<br>
+                                 ```<br><br>
+                            
+                            Upcasting and downcasting are important concepts in Java when dealing with inheritance and polymorphism. They allow for flexibility in working with objects of different types in an object-oriented hierarchy. However, downcasting should be used carefully and with proper type checks to avoid runtime errors.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Generics</summary>
+                        <p>Generics in Java provide a way to create classes, interfaces, and methods that operate on objects of various types while providing compile-time type safety. They allow you to specify placeholders for the types of data that a class or method can work with. This enables you to create more flexible and reusable code. <br><br>
+
+                            Here's a basic example to illustrate generics in Java:<br><br>
+                            
+                            ```java<br>
+                            import java.util.ArrayList;<br>
+                            import java.util.List;<br>
+                            
+                            public class Main {<br>
+                                public static void main(String[] args) {<br>
+                                    // Creating a list of strings<br>
+                                    List<String> stringList = new ArrayList<>();<br>
+                                    stringList.add("Hello");<br>
+                                    stringList.add("World");<br>
+                            
+                                    // Creating a list of integers<br>
+                                    List<Integer> integerList = new ArrayList<>();<br>
+                                    integerList.add(1);<br>
+                                    integerList.add(2);<br>
+                                    
+                                    // Printing elements of the string list<br>
+                                    for (String str : stringList) {<br>
+                                        System.out.println(str);<br>
+                                    }<br>
+                            
+                                    // Printing elements of the integer list<br>
+                                    for (Integer num : integerList) {<br>
+                                        System.out.println(num);<br>
+                                    }<br>
+                                }<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            In this example, `List<String>` and `List<Integer>` are examples of generics. They indicate that the `List` contains elements of type `String` and `Integer` respectively. This provides compile-time type checking and helps prevent type-related errors at runtime.<br><br>
+                            
+                            Generics can be used with classes, interfaces, and methods. They can also be bounded to accept only certain types or subtypes. Wildcards (`?`) can be used to specify unknown types or to provide flexibility in type declarations.<br><br>
+                            
+                            Here's an example of a generic method:<br><br>
+                            
+                            ```java<br>
+                            public class Utils {<br>
+                                public static <T> T add(T a, T b) {<br>
+                                    if (a instanceof Integer && b instanceof Integer) {<br>
+                                        Integer result = (Integer) a + (Integer) b;<br>
+                                        return (T) result;<br>
+                                    }<br>
+                                    return null;<br>
+                                }<br>
+                            
+                                public static void main(String[] args) {<br>
+                                    Integer sum = Utils.add(3, 4);<br>
+                                    System.out.println("Sum: " + sum);<br>
+                                }<br>
+                            }<br>
+                            ```<br><br>
+                            
+                            In this example, the `add` method is generic and can accept arguments of any type. However, in this specific implementation, it adds two integers. The return type `T` is also inferred based on the arguments passed.
+                            <br><br>
+                            Generics provide type safety, code reusability, and better performance by eliminating the need for explicit type casting. They are widely used in Java collections framework (`List<T>`, `Set<T>`, `Map<K,V>`, etc.) and many other Java APIs.</p>
+                        
+                    </details>
+                    <details>
+                        <summary>Wildcards in generics</summary>
+                        <p>Wildcards in Java generics provide a flexible way to work with unknown types or to specify certain constraints on types. They are denoted by the `?` symbol. Wildcards can be used in three main ways: unbounded wildcard, bounded wildcard, and wildcard with upper bounds. <br> <br>
+
+                            1. Unbounded Wildcard: Denoted by `<?>`, it represents an unknown type. It allows you to work with a collection of objects of any type. <br> <br>
+                            
+                                ```java <br>
+                                List<?> myList = new ArrayList<>(); <br>
+                                ``` <br> <br>
+                            
+                                You can use unbounded wildcards when you don't care about the actual type of objects in the collection. <br> <br>
+                            
+                            2. Bounded Wildcard: Denoted by `<? extends SomeType>` or `<? super SomeType>`, it restricts the type to a specific upper or lower bound. <br>
+                            
+                                - Upper Bounded Wildcard: `<? extends SomeType>` allows any type that is a subtype of `SomeType`. <br> <br>
+                            
+                                    ```java <br>
+                                    List<? extends Number> numberList = new ArrayList<>(); <br>
+                                    ``` <br> <br>
+                            
+                                    This allows the list to contain objects of type `Integer`, `Double`, `Float`, etc., but you can't add anything to this list because the compiler can't guarantee the specific subtype. <br> <br>
+                            
+                                - Lower Bounded Wildcard: `<? super SomeType>` allows any type that is a supertype of `SomeType`. <br> <br>
+                            
+                                    ```java <br>
+                                    List<? super Integer> integerList = new ArrayList<>(); <br>
+                                    ``` <br> <br>
+                            
+                                    This allows the list to contain objects of type `Integer` or any of its superclasses, but you can add `Integer` instances to this list. <br> <br>
+                            
+                            3. Wildcard Capture: When you're dealing with methods that accept wildcard types, sometimes you may need to capture that wildcard type to use it later in the method. <br> <br>
+                            
+                                ```java <br>
+                                public static void printList(List<?> list) { <br>
+                                    for (Object o : list) { <br>
+                                        System.out.println(o); <br>
+                                    } <br>
+                                } <br>
+                                ``` <br> <br>
+                            
+                                Here, `<?>` is a wildcard type. Inside the method, `list` is treated as a collection of some unknown type. This is an example of wildcard capture. <br> <br>
+                            
+                            Wildcards provide flexibility and type safety when working with generics, especially in scenarios where you need to handle collections of unknown types or collections with specific type constraints. They are commonly used in scenarios involving Java collections, such as lists, sets, and maps.</p>
+                        
+                    </details>
+                    <h1 class="Heading head">Module 8</h1>
+                    <details>
+                        <summary>Assignment 1</summary>
+                        <p>1. Employee Payroll System: Develop an employee payroll system that calculates the salary of employees based on their hourly rate and number of hours worked. Handle different types of employees such as full-time, part-time, and contract workers.</p>
+                        <p>2. Inventory Management System: Design an inventory management system for a store that allows users to add products, update product details, check stock availability, and generate reports.</p>
+                    </details>
+                    <details>
+                        <summary>Assignment 2</summary>
+                        <p>1. Sorting Algorithms: Implement various sorting algorithms such as bubble sort, selection sort, insertion sort, merge sort, and quick sort in Java. Compare their performance for different input sizes.</p>
+                        <p>2. Game Development: Create a simple game using Java, such as tic-tac-toe, hangman, or a maze solver. Use object-oriented programming concepts to model game entities and logic.</p>
+                    </details>
+                    <details>
+                        <summary>Assignment 3</summary>
+                        <p>1. Design a Java program to implement a graph data structure and algorithms like Dijkstra's shortest path algorithm or Kruskal's minimum spanning tree algorithm.</p>
+                        <p>2. Implement a real-time chat application in Java using sockets or JavaFX for the GUI, allowing multiple users to send and receive messages simultaneously.</p>
+                    </details>
+                </section>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <script src="js/front.js"></script>
+    <script>
+          function login() {
+    var username = document.getElementById('username').value;
+    var firstLetter = username.charAt(0).toUpperCase();
+    document.getElementById('user').innerHTML = '<a href="#" onclick="showOptions()">' + firstLetter + '</a>';
+    document.getElementById('login-form').classList.add('hidden');
+  }
+
+  function showOptions() {
+    var userOptions = document.getElementById('user-options');
+    if (userOptions.classList.contains('hidden')) {
+      userOptions.classList.remove('hidden');
+    } else {
+      userOptions.classList.add('hidden');
+    }
+  }
+
+  document.getElementById('user').addEventListener('click', function() {
+    document.getElementById('login-form').classList.toggle('hidden');
+  });
+    </script>
+
+</body>
+
+</html>
